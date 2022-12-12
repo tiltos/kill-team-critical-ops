@@ -168,21 +168,21 @@
     "description": "- At the end of the third Turning Point, if friendly operatives control an objective marker in your opponent's territory and not on the centre line, you score 1VP.\n- At the end of the fourth Turning Point, if friendly operatives control an objective marker in your opponent's territory and not on the centre line, you score 1VP."
   },
   {
-    "archetype": "Faction",
+    "archetype": "faction",
     "archetypeLabel": "Faction",
     "name": "Faction Tac Op 1",
     "occurance": "Replace with your Faction Tac Op.",
     "description": ""
   },
   {
-    "archetype": "Faction",
+    "archetype": "faction",
     "archetypeLabel": "Faction",
     "name": "Faction Tac Op 2",
     "occurance": "Replace with your Faction Tac Op.",
     "description": ""
   },
   {
-    "archetype": "Faction",
+    "archetype": "faction",
     "archetypeLabel": "Faction",
     "name": "Faction Tac Op 3",
     "occurance": "Replace with your Faction Tac Op.",

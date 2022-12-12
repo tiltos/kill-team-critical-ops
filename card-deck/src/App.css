@@ -13,7 +13,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 20vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,11 +68,48 @@ select {
   padding: 10px;
 }
 
+.tabs {
+  display: flex;
+  justify-content: center;
+  background-color: #282c34;
+}
+.tab {
+  font-size: 30px;
+  font-family: "Bebas Neue";
+  padding: 10px 40px 5px;
+  color: white;
+  border-radius: 12px 12px 0 0;
+  cursor: pointer;
+}
+.tab.active {
+  background-color: white;
+  color: #282c34;
+}
+
+.tab-body.active-all .saved {
+  display: none;
+}
+.tab-body.active-saved .all {
+  display: none;
+}
+
+.tab-body .saved {
+  min-height: 400px;
+}
 .tacop-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto 30px;
+}
+
+.saved-cards {
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 77px auto 30px;
+   
 }
 .card {
   width: 320px;
@@ -81,8 +118,17 @@ select {
   border: 1px solid rgb(65, 77, 0);;
   min-height: 400px;
   font-size: 14px;
+  box-shadow: 0 0 0 transparent;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
 }
-
+.card:hover {
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+.card.selected {
+  box-shadow: 0 2px 15px rgba(0,0,0,0.5);
+}
 .card .archetype {
   background-color: rgb(65, 77, 0);
   text-align: center;
@@ -183,10 +229,52 @@ i.pentagon {
   margin: 0;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  margin-top: auto;
+}
+.btn {
+  padding: 5px 40px;
+  text-transform: uppercase;
+  font-family: "Bebas Neue";
+  letter-spacing: 0.05em;
+  font-size: 24px;
+  border-radius: 4px;
+  background-color: #282c34;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  
+}
+.btn span {
+  width: 20px;
+  height: 4px;
+  display: block;
+  background-color: white;
+  position: absolute;
+  top: 28px;
+  left: 10px
+}
 
-@media screen and (max-width: 600px) {
+.btn.select span:nth-child(2) {
+  transform: rotate(90deg);
+}
+.btn:hover {
+  background-color: #ff4f02;
+}
+
+@media screen and (max-width: 500px) {
   .App-header {
-    font-size: 32px;
+    font-size: 26px;
     line-height: 1;
+  }
+  .card {
+    width: 100%;
+    min-height: 0;
   }
 }
