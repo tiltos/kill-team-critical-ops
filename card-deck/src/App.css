@@ -20,8 +20,11 @@
   justify-content: center;
   font-size: 40px;
   color: white;
+  padding: 20px;
 }
-
+h1 {
+  margin: 0;
+}
 h1,
 h2,
 h3,
@@ -68,6 +71,8 @@ select {
 .tacop-cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto 30px;
 }
 .card {
   width: 320px;
@@ -176,4 +181,12 @@ i.pentagon {
   content: "";
   background: url(img/pentagon.svg) no-repeat center / contain;
   margin: 0;
+}
+
+
+@media screen and (max-width: 600px) {
+  .App-header {
+    font-size: 32px;
+    line-height: 1;
+  }
 }
