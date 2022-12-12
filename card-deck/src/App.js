@@ -73,7 +73,7 @@ export default function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Kill Team Critical Operations TacOps</h1>
+        <h1>Kill Team Critical Operations Cards</h1>
       </header>
       <div className={`tabs active-${tab}`}>
         <div
