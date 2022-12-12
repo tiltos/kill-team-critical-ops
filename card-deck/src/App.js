@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import data from "./data/tacops.json";
 import { useState } from "react";
@@ -57,7 +56,7 @@ function ShowTacOps() {
 
                 <div className="middle">
                   <h2 className="name">{tacOp.name}</h2>
-                  <div className="occurance">{tacOp.occurance}</div>
+                  <div className="occurance"><ReactMarkdown children={tacOp.occurance} rehypePlugins={[rehypeRaw]} /></div>
                   <div className="description"><ReactMarkdown children={tacOp.description} rehypePlugins={[rehypeRaw]} /></div>
                 </div>
               </div>

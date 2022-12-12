@@ -24,22 +24,22 @@
     "archetype": "security",
     "archetypeLabel": "Security",
     "name": "Central Control",
-    "occurance": "",
-    "description": ""
+    "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning Point after the first.",
+    "description": "- At the end of any Turning Point, if the total APL of friendly operatives within <i class='square'></i> of the centre of the killzone and not on a Vantage Point is greater than that of enenmy operatives, you score 1VP.\n- If you achieve the first condition at the end of any subsequent Turning Points, you score 1VP."
   },
   {
     "archetype": "security",
     "archetypeLabel": "Security",
     "name": "Protect Assets",
-    "occurance": "",
-    "description": ""
+    "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning Point.",
+    "description": "- At the end of any Turning Point, if two or more enemy operatives were incapacitated while within <i class='circle'></i> of an objective market during that Turning Point, score 1VP.\n- If you achieve the first condition at the end of any subsequent Turning Points, you score 1VP."
   },
   {
     "archetype": "security",
     "archetypeLabel": "Security",
     "name": "Escort Operative",
-    "occurance": "",
-    "description": ""
+    "occurance": "You can reveal this Tac Op in the Target Reveal step of the first or second Turning Point.",
+    "description": "Select one friendly operative.\n- If that friendly operative is wholly within your opponent's territory, you score 1VP.\n- If that friendly operative is within <i class='pentagon'></i> of your opponent's killzone edge, you score 1VP."
   },
   {
     "archetype": "seek-destroy",
@@ -66,22 +66,22 @@
     "archetype": "seek-destroy",
     "archetypeLabel": "Seek & Destroy",
     "name": "Rob & Ransack",
-    "occurance": "",
-    "description": ""
+    "occurance": "You can reveal this Tac Op when an enemy operative is incapacitated by a friendly operative within its Engagement Range, and that friendly operative is more than <i class='square'></i> from other enemy operatives.",
+    "description": "- You score 1VP.\n- At the end of the battle, if you achieved the first condition and that friendly operative has not been incapacitated, you score 1VP."
   },
   {
     "archetype": "seek-destroy",
     "archetypeLabel": "Seek & Destroy",
     "name": "Headhunter",
-    "occurance": "",
-    "description": ""
+    "occurance": "You must reveal this Tac Op when an enemy LEADER operative is incapacitated.",
+    "description": "- You score 1VP.\n- If it's the first or second Turning Point, you score 1VP."
   },
   {
     "archetype": "seek-destroy",
     "archetypeLabel": "Seek & Destroy",
     "name": "Executioner",
-    "occurance": "",
-    "description": ""
+    "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning Point.",
+    "description": "When you do so, select one friendly operative to be your executioner. At the end of each Target Reveal step, select one enemy operative to be executed for the Turning Point.\n- If the enemy operative you selected to be executed for the Turning Point is incapacitated by your executioner during the same Turning Point, score 1VP.\n- If you achieve the first condition in any subsequent Turning Points, you score 1VP."
   },
   {
     "archetype": "recon",
@@ -108,22 +108,22 @@
     "archetype": "recon",
     "archetypeLabel": "Recon",
     "name": "Courier",
-    "occurance": "",
-    "description": ""
+    "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning Point.",
+    "description": "When you do so, select one friendly operative.\n- At the end of any Turning Point, if that operative is within <i class='pentagon'></i> of your opponent's drop zone, you score 1VP.\n- If you achieve the first condition at the end of any subsequent Turning Points, you score 1VP."
   },
   {
     "archetype": "recon",
     "archetypeLabel": "Recon",
     "name": "Recover Item",
-    "occurance": "",
-    "description": ""
+    "occurance": "You must reveal this Tac Op in the Target Reveal step of the first Turning Point.",
+    "description": "Place one of your Item tokens within your opponent's territory. The **Pick Up** action can be performed by friendly operatives (but not enemy operatives) upon your Item token.\n- At the end of any Turning Point, if a friendly operative controls your Item token, you score 1VP.\n- If you achieve the first condition at the end of any subsequent Turning Points, you score 1VP."
   },
   {
     "archetype": "recon",
     "archetypeLabel": "Recon",
     "name": "Plant Transponder",
-    "occurance": "",
-    "description": ""
+    "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning point after the first.",
+    "description": "- If a friendly operative performs the **Plant Transponder** mission action, you score 1VP.\n- If you achieve the first condition in any subsequent Turning Points, you score 1VP.\n\nFriendly operatives can perform the following mission action:<h5><span>Plant Transponder</span> <span>1AP</span></h5>An operative can perform this action while wholly within your opponent's territory and more than <i class='circle'></i> from terrain features (barricades are terrain features. Ignore terrain features that have the Insignificant trait). If it does so, place one of your Transponder tokens underneath the operative as close as possible to the centre of its base. An operative cannot perform this action while within Engagement Range of an enemy operative or <i class='pentagon'></i> of your other Transponder tokens."
   },
   {
     "archetype": "infiltration",
@@ -150,21 +150,42 @@
     "archetype": "infiltration",
     "archetypeLabel": "Infiltration",
     "name": "Seize Defences",
-    "occurance": "",
-    "description": ""
+    "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning Point.",
+    "description": "- At the end of any Turning Point, if you control an opponent's barricade, you score 1VP.\n- If you achieve the first condition at the end of any subsequent Turning Points, you score 1VP.\n\nFriendly operatives control a barricade if the total APL of friendly operatives within <i class='triangle'></i> of it is greater than that of enemy operatives."
   },
   {
     "archetype": "infiltration",
     "archetypeLabel": "Infiltration",
     "name": "Install Device",
-    "occurance": "",
-    "description": ""
+    "occurance": "Reveal this Tac Op when a friendly operative performs the Install Device mission action.",
+    "description": "- At the end of any Turning Point, if your Device token has been in the killzone for the whole of that Turning Point, you score 1VP.\n- If you achieve the first condition at the end of any subsequent Turning Points, you score 1VP.\n\nFriendly operatives can perform the following mission action:<h5><span>Install Device</span> <span>1AP</span></h5>An operative can perform this action while it controls an objective marker in your opponent's territory or on the centre line. Place your Device token on that objective marker. Remove it if an enemy operative controls that objective marker. An operative connot perform this action if your Device token is in the killzone."
   },
   {
     "archetype": "infiltration",
     "archetypeLabel": "Infiltration",
     "name": "Subversive Control",
-    "occurance": "",
+    "occurance": "You can reveal this Tac Op in ther Target Reveal step of the third or fourth Turning Point.",
+    "description": "- At the end of the third Turning Point, if friendly operatives control an objective marker in your opponent's territory and not on the centre line, you score 1VP.\n- At the end of the fourth Turning Point, if friendly operatives control an objective marker in your opponent's territory and not on the centre line, you score 1VP."
+  },
+  {
+    "archetype": "Faction",
+    "archetypeLabel": "Faction",
+    "name": "Faction Tac Op 1",
+    "occurance": "Replace with your Faction Tac Op.",
+    "description": ""
+  },
+  {
+    "archetype": "Faction",
+    "archetypeLabel": "Faction",
+    "name": "Faction Tac Op 2",
+    "occurance": "Replace with your Faction Tac Op.",
+    "description": ""
+  },
+  {
+    "archetype": "Faction",
+    "archetypeLabel": "Faction",
+    "name": "Faction Tac Op 3",
+    "occurance": "Replace with your Faction Tac Op.",
     "description": ""
   }
 ]
