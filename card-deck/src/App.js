@@ -1,16 +1,45 @@
 import "./App.css";
-import data from "./data/tacops.json";
+import tacOpsData from "./data/tacops.json";
+import missionsData from "./data/missions.json";
+import mapsData from "./data/maps.json";
 import { useEffect, useState } from "react";
 import React from "react";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 
-function ShowTacOps() {
-  const [tacOpsData, setTacOpsList] = useState(data);
+export default function App() {
   const [archetype, setArchetype] = useState(null);
   const [savedCards, setSavedCards] = useState([]);
+  const [savedMap, setSavedMap] = useState();
+  const [savedMission, setSavedMission] = useState();
+  const [hasGeneratedMission, setHasGeneratedMission] = useState(false);
   const [loaded, setLoaded] = useState(false);
-  const [tab, setTab] = useState("all");
+  const [tab, setTab] = useState("");
+
+  function changeTab(choice) {
+    setTab(choice);
+    localStorage.setItem("tab", choice);
+  }
+
+  function generateMission(choice) {
+    let ranMap = Math.floor(Math.random() * 9);
+    let ranMission = Math.floor(Math.random() * 3);
+    localStorage.setItem("savedMap", ranMap);
+    localStorage.setItem("savedMission", ranMission);
+    localStorage.setItem("hasGenerated", true);
+    setSavedMap(ranMap);
+    setSavedMission(ranMission);
+    setHasGeneratedMission(true);
+  }
+
+  function resetMission(choice) {
+    setSavedMap(null);
+    setSavedMission(null);
+    setHasGeneratedMission(false);
+    localStorage.removeItem("savedMap");
+    localStorage.removeItem("savedMission");
+    localStorage.removeItem("hasGenerated");
+  }
 
   function saveCard(cardName) {
     if (savedCards.length < 3) {
@@ -26,7 +55,14 @@ function ShowTacOps() {
 
   useEffect(() => {
     if (!loaded) {
-      setSavedCards(JSON.parse(localStorage.getItem("savedCards", savedCards)) || "");
+      setSavedCards(JSON.parse(localStorage.getItem("savedCards")) || "");
+      setTab(localStorage.getItem("tab") || "");
+      let hasGenerated = localStorage.getItem("hasGenerated") || false;
+      if (hasGenerated) {
+        setHasGeneratedMission(true);
+        setSavedMap(localStorage.getItem("savedMap") || false);
+        setSavedMission(localStorage.getItem("savedMission") || false);
+      }
     } else {
       localStorage.setItem("savedCards", JSON.stringify(savedCards));
     }
@@ -35,23 +71,34 @@ function ShowTacOps() {
   }, [savedCards]);
 
   return (
-    <>
+    <div className="App">
+      <header className="App-header">
+        <h1>Kill Team Critical Operations TacOps</h1>
+      </header>
       <div className={`tabs active-${tab}`}>
+        <div
+          className={`tab ${tab === "missions" ? "active" : ""}`}
+          onClick={() => {
+            changeTab("missions");
+          }}
+        >
+          Mission Generator
+        </div>
         <div
           className={`tab ${tab === "all" ? "active" : ""}`}
           onClick={() => {
-            setTab("all");
+            changeTab("all");
           }}
         >
-          All Cards
+          All Tac Ops
         </div>
         <div
           className={`tab ${tab === "saved" ? "active" : ""}`}
           onClick={() => {
-            setTab("saved");
+            changeTab("saved");
           }}
         >
-          Saved ({savedCards.length}/3)
+          Saved Tac Ops ({savedCards.length}/3)
         </div>
       </div>
       <div className={`tab-body active-${tab}`}>
@@ -90,7 +137,7 @@ function ShowTacOps() {
             </div>
           </div>
 
-          <div className="tacop-cards">
+          <div className="tacop-cards card-set">
             {tacOpsData
               .filter((tacOp) =>
                 archetype ? tacOp.archetype === archetype : true
@@ -150,7 +197,7 @@ function ShowTacOps() {
           </div>
         </div>
         <div className="saved">
-          <div className="saved-cards">
+          <div className="saved-cards card-set">
             {tacOpsData
               .filter(
                 (tacOp) =>
@@ -194,18 +241,133 @@ function ShowTacOps() {
               })}
           </div>
         </div>
-      </div>
-    </>
-  );
-}
+        <div
+          className={hasGeneratedMission ? `missions generated` : `missions`}
+        >
+          <div className="generator">
+            {hasGeneratedMission ? (
+              <>
+                <div
+                  className="btn generate-button"
+                  onClick={() => generateMission()}
+                >
+                  Generate again
+                </div>
+                <div
+                  className="btn generate-button"
+                  onClick={() => resetMission()}
+                >
+                  Reset
+                </div>
+              </>
+            ) : (
+              <div
+                className="btn generate-button"
+                onClick={() => generateMission()}
+              >
+                Generate random mission
+              </div>
+            )}
+          </div>
+          <div className="mission-cards card-set">
+            {missionsData.map((mission) => {
+              return (
+                <div className={"card mission"} key={mission.name}>
+                  <div className="head">
+                    <div className="label">Mission</div>
+                    <div className="title">
+                      <div className="letter">{mission.letter}</div>
+                      <h2 className="mission-name">{mission.name}</h2>
+                    </div>
+                  </div>
 
-export default function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Kill Team Critical Operations TacOps</h1>
-      </header>
-      <ShowTacOps />
+                  <div className="middle">
+                    <h4>Mission Rule</h4>
+                    <div className="occurance">
+                      <ReactMarkdown
+                        children={mission.rule}
+                        rehypePlugins={[rehypeRaw]}
+                      />
+                    </div>
+                    <h4>Mission Objective</h4>
+                    <div className="description">
+                      <ReactMarkdown
+                        children={mission.objective}
+                        rehypePlugins={[rehypeRaw]}
+                      />
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+          <div className="map-cards card-set">
+            {mapsData.map((map) => {
+              return (
+                <div className={"card map"} key={map.name}>
+                  <div className="archetype">{map.name}</div>
+
+                  <div className="middle">
+                    <img src={map.file} />
+                  </div>
+                </div>
+              );
+            })}
+            <div className={"card"}>
+              <div className="archetype">Map Card Key</div>
+              <div className="middle">
+                <img src="./img/legend.svg" />
+              </div>
+            </div>
+          </div>
+          {hasGeneratedMission && (
+            <div className="generated-mission">
+              <div className={"card mission"}>
+                <div className="head">
+                  <div className="label">Mission</div>
+                  <div className="title">
+                    <div className="letter">
+                      {missionsData[savedMission].letter}
+                    </div>
+                    <h2 className="mission-name">
+                      {missionsData[savedMission].name}
+                    </h2>
+                  </div>
+                </div>
+
+                <div className="middle">
+                  <h4>Mission Rule</h4>
+                  <div className="occurance">
+                    <ReactMarkdown
+                      children={missionsData[savedMission].rule}
+                      rehypePlugins={[rehypeRaw]}
+                    />
+                  </div>
+                  <h4>Mission Objective</h4>
+                  <div className="description">
+                    <ReactMarkdown
+                      children={missionsData[savedMission].objective}
+                      rehypePlugins={[rehypeRaw]}
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className={"card map"}>
+                <div className="archetype">{mapsData[savedMap].name}</div>
+                <div className="middle">
+                  <img src={mapsData[savedMap].file} />
+                </div>
+              </div>
+              <div className={"card"}>
+                <div className="archetype">Map Card Key</div>
+                <div className="middle">
+                  <img src="./img/legend.svg" />
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "1. Sector",
+    "file": "/img/map-1.svg"
+  },
+  {
+    "name": "2. Centre",
+    "file": "./img/map-2.svg"
+  },
+  {
+    "name": "3. Flank",
+    "file": "./img/map-3.svg"
+  },
+  {
+    "name": "4. Strait",
+    "file": "./img/map-4.svg"
+  },
+  {
+    "name": "5. Battleground",
+    "file": "./img/map-5.svg"
+  },
+  {
+    "name": "6. Boundary",
+    "file": "./img/map-6.svg"
+  },
+  {
+    "name": "7. Junction",
+    "file": "./img/map-7.svg"
+  },
+  {
+    "name": "8. Approach",
+    "file": "./img/map-8.svg"
+  },
+  {
+    "name": "9. Front Line",
+    "file": "./img/map-9.svg"
+  }
+]

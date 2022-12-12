@@ -1,8 +1,10 @@
 :root {
+  --colour-dark-grey: #282c34;
   --colour-security: #0b6be1;
   --colour-seek-destroy: #bd0003;
   --colour-recon: #ff4f02;
   --colour-infiltration: #414141;
+  --colour-faction: rgb(65, 77, 0);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -12,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--colour-dark-grey);
   min-height: 10vh;
   display: flex;
   flex-direction: column;
@@ -71,7 +73,7 @@ select {
 .tabs {
   display: flex;
   justify-content: center;
-  background-color: #282c34;
+  background-color: var(--colour-dark-grey);
 }
 .tab {
   font-size: 30px;
@@ -83,13 +85,29 @@ select {
 }
 .tab.active {
   background-color: white;
-  color: #282c34;
+  color: var(--colour-dark-grey);
 }
 
-.tab-body.active-all .saved {
+.tab-body.active-all .saved,
+.tab-body.active-all .missions,
+.tab-body.active-all .instructions {
   display: none;
 }
-.tab-body.active-saved .all {
+.tab-body.active-saved .all,
+.tab-body.active-saved .missions,
+.tab-body.active-saved .instructions {
+  display: none;
+}
+
+.tab-body.active-missions .all,
+.tab-body.active-missions .saved,
+.tab-body.active-missions .instructions {
+  display: none;
+}
+
+.tab-body.active-instructions .all,
+.tab-body.active-instructions .missions,
+.tab-body.active-instructions .saved {
   display: none;
 }
 
@@ -97,25 +115,40 @@ select {
   min-height: 400px;
 }
 .tacop-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   margin: 0 auto 30px;
 }
 
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .saved-cards {
-  
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 77px auto 30px;
-   
+  margin: 77px auto 30px;
+}
+.map-cards {
+  margin-bottom: 30px;
+}
+.mission-cards {
+  margin-bottom: 30px;
+}
+
+.generated-mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.missions.generated .map-cards,
+.missions.generated .mission-cards {
+  display: none;
 }
 .card {
   width: 320px;
   margin: 10px;
   border-radius: 10px;
-  border: 1px solid rgb(65, 77, 0);;
+  border: 1px solid var(--colour-dark-grey);
   min-height: 400px;
   font-size: 14px;
   box-shadow: 0 0 0 transparent;
@@ -123,14 +156,28 @@ select {
   display: flex;
   flex-direction: column;
 }
+.card.map {
+  width: 460px;
+  height: 320px;
+}
+.subhead {
+  text-align: center;
+  font-weight: normal;
+  font-size: 40px;
+  margin: 0.25em 0;
+}
+
+img {
+  max-width: 100%;
+}
 .card:hover {
-  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 .card.selected {
-  box-shadow: 0 2px 15px rgba(0,0,0,0.5);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
 }
 .card .archetype {
-  background-color: rgb(65, 77, 0);
+  background-color: var(--colour-dark-grey);
   text-align: center;
   padding: 5px;
   margin: 0;
@@ -170,6 +217,47 @@ select {
   background-color: var(--colour-infiltration);
 }
 
+.card.faction {
+  border-color: var(--colour-faction);
+}
+.card.faction .archetype {
+  background-color: var(--colour-faction);
+}
+
+.card.mission .label {
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 10px 0 5px;
+  padding: 0 0 5px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.card.mission .title {
+  display: flex;
+  font-family: "Bebas Neue";
+  background-color: var(--colour-dark-grey);
+  color: white;
+  align-items: center;
+}
+.card.mission .letter {
+  font-size: 80px;
+  line-height: 1;
+  background-color: var(--colour-dark-grey);
+  padding: 5px 15px;
+  margin-left: 15px;
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+}
+.card.mission .mission-name {
+  font-size: 50px;
+  padding: 0 20px;
+  margin: 0;
+}
+.card.mission .middle {
+  padding-top: 0;
+}
 .card .name {
   text-align: center;
   text-transform: uppercase;
@@ -182,6 +270,12 @@ select {
 .card .middle {
   padding: 10px 20px 20px;
 }
+.card h4 {
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin: 10px 0 0;
+}
 .card h5 {
   color: white;
   background-color: var(--colour-recon);
@@ -192,8 +286,7 @@ select {
   font-family: "Roboto Mono", monospace;
   text-transform: uppercase;
 }
-.card h5 span {
-}
+
 i.square {
   width: 13px;
   height: 13px;
@@ -249,7 +342,6 @@ i.pentagon {
   position: relative;
   text-align: center;
   font-weight: bold;
-  
 }
 .btn span {
   width: 20px;
@@ -258,7 +350,7 @@ i.pentagon {
   background-color: white;
   position: absolute;
   top: 28px;
-  left: 10px
+  left: 10px;
 }
 
 .btn.select span:nth-child(2) {
@@ -266,6 +358,20 @@ i.pentagon {
 }
 .btn:hover {
   background-color: #ff4f02;
+}
+.generator {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+.generate-button {
+  background-color: #ff4f02;
+  padding: 15px 40px;
+  font-size: 32px;
+  margin: 10px;
+}
+.generate-button:hover {
+  background-color: #b03500;
 }
 
 @media screen and (max-width: 500px) {
@@ -276,5 +382,35 @@ i.pentagon {
   .card {
     width: 100%;
     min-height: 0;
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: center;
+    background-color: var(--colour-dark-grey);
+    padding: 0 5px;
+  }
+  .tab {
+    font-size: 22px;
+    font-family: "Bebas Neue";
+    padding: 10px 10px 5px;
+    color: white;
+    border-radius: 6px 6px 0 0;
+    cursor: pointer;
+    line-height: 1.2;
+  }
+  .generator {
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  .generate-button {
+    padding: 10px 20px;
+  }
+  .generated-mission {
+    flex-wrap: wrap;
+  }
+  .card.map {
+    width: 100%;
+    height: auto;
   }
 }
