@@ -1,0 +1,170 @@
+[
+  {
+    "archetype": "security",
+    "archetypeLabel": "Security",
+    "name": "Seize Ground",
+    "occurance": "You must reveal this Tac Op in the Target Reveal step of the first turning point.",
+    "description": "Select one terrain feature that is more than <i class='square'></i> from your drop zone and includes any parts with the Heavy trait.\n\n- At the end of the battle, if friendly operatives control that terrain feature, you score 1VP.\n- If you achieve the first condition, there are no enemy operatives within <i class='triangle'></i> of that terrain feature, and the total APL of the friendly operatives that control it is 4 or more, you score 1VP.\n\nFriendly operatives control that terraon feature if the total APL of friendly operatives within <i class='triangle'></i> of it is greater than that of enemy operatives."
+  },
+  {
+    "archetype": "security",
+    "archetypeLabel": "Security",
+    "name": "Hold Them Back",
+    "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning point after the first.",
+    "description": "- At the end of any Turning Point, if there are no enemy operatives wholly within your territory, you score 1VP.\n- If you acheive the first condition at the end of any subsequent Turning Points, you score 1VP."
+  },
+  {
+    "archetype": "security",
+    "archetypeLabel": "Security",
+    "name": "Secure Centre Line",
+    "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning Point after the first.",
+    "description": "- At the end of any Turning Point, if the total APL of friendly operatives on the centre line and not on a Vantage Point is greater than that of the enemy operatives, you score 1VP.\n- If you achieve the first condition at the end of any subsequent Turning Points, you score 1VP."
+  },
+  {
+    "archetype": "security",
+    "archetypeLabel": "Security",
+    "name": "Central Control",
+    "occurance": "",
+    "description": ""
+  },
+  {
+    "archetype": "security",
+    "archetypeLabel": "Security",
+    "name": "Protect Assets",
+    "occurance": "",
+    "description": ""
+  },
+  {
+    "archetype": "security",
+    "archetypeLabel": "Security",
+    "name": "Escort Operative",
+    "occurance": "",
+    "description": ""
+  },
+  {
+    "archetype": "seek-destroy",
+    "archetypeLabel": "Seek & Destroy",
+    "name": "Rout",
+    "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning Point.",
+    "description": "- If an enemy operative is incapacitated by a friendly operative, and that friendly operative is within <i class='pentagon'></i> of your opponent's drop zone when it does so, you score 1VP.\n- If you achieve the first condition in any subsequent Turning Points, you score 1VP."
+  },
+  {
+    "archetype": "seek-destroy",
+    "archetypeLabel": "Seek & Destroy",
+    "name": "Eliminate Guards",
+    "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning Point.",
+    "description": "Once you do so, at the end of each Target Reveal step, select an objective market on the centre line or within your opponent's territory, then select one enemy operative within <i class='circle'</i> of it to be the guard for the Turning Point.\n- If the enemy operative you selected to be the guard for the Turning Point is incapacitated during the same Turning Point, you score 1VP.\n- If you achieve the first condition in any subsequent Turning Points, you score 1VP."
+  },
+  {
+    "archetype": "seek-destroy",
+    "archetypeLabel": "Seek & Destroy",
+    "name": "Assassinate Target",
+    "occurance": "You must reveal this Tac Op in the Target Reveal step of the first Turning Point.",
+    "description": "Your opponent selects one of their operatives.\n- If that operative is incapacitated, you score 2VPs.\n- At the end of the battle, if that operative has not been incapacitated but has fewer than half of its wounds remaiing, you score 1VP."
+  },
+  {
+    "archetype": "seek-destroy",
+    "archetypeLabel": "Seek & Destroy",
+    "name": "Rob & Ransack",
+    "occurance": "",
+    "description": ""
+  },
+  {
+    "archetype": "seek-destroy",
+    "archetypeLabel": "Seek & Destroy",
+    "name": "Headhunter",
+    "occurance": "",
+    "description": ""
+  },
+  {
+    "archetype": "seek-destroy",
+    "archetypeLabel": "Seek & Destroy",
+    "name": "Executioner",
+    "occurance": "",
+    "description": ""
+  },
+  {
+    "archetype": "recon",
+    "archetypeLabel": "Recon",
+    "name": "Surge Forward",
+    "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning Point.",
+    "description": "- At the end of any Turning Point, if the total APL of friendly operatives within <i class='pentagon'></i> of your opponent's drop zone is 4 or more, you score 1VP.\n- If you achieve the first condition at the end of any subsequent Turning Points, you score 1VP."
+  },
+  {
+    "archetype": "recon",
+    "archetypeLabel": "Recon",
+    "name": "Outflank",
+    "occurance": "You can reveal this Tac Op in the Target Reeveal step of any Turning Point.",
+    "description": "- At the end of any Turning Point, if friendly operatives control both neutral killzone edges, you score 1VP.\n- If you achieve the first condition at the end of any subsequent Turning Points, you score 1VP.\n\nFriendly operatives control a neutral killzone edge if the total APL of friendly operatives within <i class='square'></i> of it is greater than that of enemy operatives. Operatives within <i class='pentagon'></i> of their own drop zone cannot contribute their APL when determining this total."
+  },
+  {
+    "archetype": "recon",
+    "archetypeLabel": "Recon",
+    "name": "Secure Vantage",
+    "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning Point after the first.",
+    "description": "- At the end of any Turning Point, if you control a Vantage Point that is more than <i class='square'></i> from your drop zone, you score 1VP.\n- If you achieve the first condition with a different vantage point at the end of any subsequent Turning Points, you score 1VP.\n\nFriendly operatives control a Vantage Point if the total APL of friendly operatives on it is greater than that of enemy operatives."
+  },
+  {
+    "archetype": "recon",
+    "archetypeLabel": "Recon",
+    "name": "Courier",
+    "occurance": "",
+    "description": ""
+  },
+  {
+    "archetype": "recon",
+    "archetypeLabel": "Recon",
+    "name": "Recover Item",
+    "occurance": "",
+    "description": ""
+  },
+  {
+    "archetype": "recon",
+    "archetypeLabel": "Recon",
+    "name": "Plant Transponder",
+    "occurance": "",
+    "description": ""
+  },
+  {
+    "archetype": "infiltration",
+    "archetypeLabel": "Infiltration",
+    "name": "Stalk Target",
+    "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning Point.",
+    "description": "Once you do so, at the end of each Target Reveal step, select one enemy operative to be stalked for that Turning Point.\n- At the end of any Turning Point, if a friendly operative with a Conceal order is within <i class='square'></i> but not within Engagement Range of the enemy operative you selected to be stalked for that Turning Point, you score 1VP.\n- If you achieve the first condition at the end of any subsequent Turning Points, you score 1VP."
+  },
+  {
+    "archetype": "infiltration",
+    "archetypeLabel": "Infiltration",
+    "name": "Gather Surveillance",
+    "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning Point.",
+    "description": "Once you do so, at the end of each Target Reveal step, select one friendly operative to gather surveillance for that Turning Point.\n- At the end of any Turning Point, if the friendly operative you selected to gather surveillance for that Turning Point has a Conceal order, is wholly within your opponent's territory and is more than <i class='square'></i> from enemy operatives, you score 1VP.\n- If you achieve the first condition at the end of any subsequent Turning Points, you score 1VP."
+  },
+  {
+    "archetype": "infiltration",
+    "archetypeLabel": "Infiltration",
+    "name": "Implant",
+    "occurance": "You can reveal this Tac Op when a friendly operative would strike an enemy operative in combat.",
+    "description": "- Instead of inflicting damage on an enemy operative from that strike, you can implant that operative. That operative does not lose any wounds from that strike and you score 1VP.\n- If two other enemy operatives are implanted as above, you score 1VP."
+  },
+  {
+    "archetype": "infiltration",
+    "archetypeLabel": "Infiltration",
+    "name": "Seize Defences",
+    "occurance": "",
+    "description": ""
+  },
+  {
+    "archetype": "infiltration",
+    "archetypeLabel": "Infiltration",
+    "name": "Install Device",
+    "occurance": "",
+    "description": ""
+  },
+  {
+    "archetype": "infiltration",
+    "archetypeLabel": "Infiltration",
+    "name": "Subversive Control",
+    "occurance": "",
+    "description": ""
+  }
+]

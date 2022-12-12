@@ -1,0 +1,155 @@
+:root {
+  --colour-security: #0b6be1;
+  --colour-seek-destroy: #bd0003;
+  --colour-recon: #ff2f00;
+  --colour-infiltration: #414141;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.tacops-filters {
+  padding: 20px;
+  text-align: center;
+}
+.filter-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+.filter-group .label {
+  margin-right: 20px;
+}
+select {
+  padding: 10px;
+}
+
+.tacop-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  width: 320px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  min-height: 400px;
+  
+}
+
+.card .archetype {
+  background-color: red;
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px 10px 0 0;
+}
+
+.card.security {
+  border-color: var(--colour-security);
+}
+.card.security .archetype {
+  background-color: var(--colour-security);
+}
+
+.card.seek-destroy {
+  border-color: var(--colour-seek-destroy);
+}
+.card.seek-destroy .archetype {
+  background-color: var(--colour-seek-destroy);
+}
+
+.card.recon {
+  border-color: var(--colour-recon);
+}
+.card.recon .archetype {
+  background-color: var(--colour-recon);
+}
+
+.card.infiltration {
+  border-color: var(--colour-infiltration);
+}
+.card.infiltration .archetype {
+  background-color: var(--colour-infiltration);
+}
+
+.card .name {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 10px 0;
+
+}
+.card .middle {
+  padding: 10px 20px 40px;
+}
+
+i.square {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  content: '';
+  background-color: blue;
+  margin: 0 0.1em;
+}
+i.triangle {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  content: '';
+  background: url(img/triangle.svg) no-repeat center / contain;
+  margin: 0 0.1em;
+}
+i.circle {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  content: '';
+  background-color: white;
+  border: 1px solid #333;
+  border-radius: 50%;
+  margin: 0 0.1em;
+}
+i.pentagon {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  content: '';
+  background: url(img/pentagon.svg) no-repeat center / contain;
+  margin: 0 0.1em;
+}
