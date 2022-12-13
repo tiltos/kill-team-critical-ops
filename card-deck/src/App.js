@@ -134,17 +134,34 @@ export default function App() {
                   </option>
                 </optgroup>
                 <optgroup label="Bespoke Teams">
-
+                  <option key="blooded" value="blooded">
+                    Blooded
+                  </option>
                   <option key="corsair-voidscarred" value="corsair-voidscarred">
                     Corsair Voidscarred
+                  </option>
+                  <option
+                    key="elucidian-starstrider"
+                    value="elucidian-starstrider"
+                  >
+                    Elucidian Starstrider
                   </option>
                   <option key="farstalker-kinband" value="farstalker-kinband">
                     Farstalker Kinband
                   </option>
+                  <option key="gellerpox" value="gellerpox">
+                    Gellerpox Infected
+                  </option>
                   <option key="hierotek" value="hierotek">
                     Hierotek Circle
                   </option>
-                  <option key="imperial-navy-breachers" value="imperial-navy-breachers">
+                  <option key="hunter-clade" value="hunter-clade">
+                    Hunter Clade
+                  </option>
+                  <option
+                    key="imperial-navy-breachers"
+                    value="imperial-navy-breachers"
+                  >
                     Imperial Navy Breachers
                   </option>
                   <option key="intercessors" value="intercessors">
@@ -156,8 +173,14 @@ export default function App() {
                   <option key="legionary" value="legionary">
                     Legionaries
                   </option>
+                  <option key="novitiates" value="novitiates">
+                    Novitiates
+                  </option>
                   <option key="pathfinders" value="pathfinders">
                     Pathfinders
+                  </option>
+                  <option key="phobos" value="phobos">
+                    Phobos Strike Team
                   </option>
                   <option key="veteran-guardsmen" value="veteran-guardsmen">
                     Veteran Guardsmen

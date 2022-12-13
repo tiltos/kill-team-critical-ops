@@ -186,13 +186,13 @@ img {
   background-color: var(--colour-dark-grey);
   text-align: center;
   padding: 5px;
-  margin: 0;
+  margin: -1px;
   text-transform: uppercase;
   color: white;
   font-weight: normal;
   font-family: "Bebas Neue";
   font-size: 32px;
-  border-radius: 8px 8px 0 0;
+  border-radius: 10px 10px 0 0;
 }
 
 .card.security {

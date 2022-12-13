@@ -188,6 +188,28 @@
     "occurance": "Replace with your Faction Tac Op.",
     "description": ""
   },
+
+  {
+    "archetype": "blooded",
+    "archetypeLabel": "Blooded",
+    "name": "Worthy Champion",
+    "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning Point.",
+    "description": "- If a friendly BLOODED operative that is under the gaze of the gods incapacitates one or more enemy operatives during the Turning Point, and is within <i class='pentagon'></i> of the centre of the killzone or your opponent’s drop zone at the end of the Turning Point, you score 1VP.\n- If you achieve the first condition in any subsequent Turning Points, you score 1VP."
+  },
+  {
+    "archetype": "blooded",
+    "archetypeLabel": "Blooded",
+    "name": "Malign Command",
+    "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning Point.",
+    "description": "- At the end of any Turning Point, if friendly BLOODED operatives control half or more of the objective markers, and each of those objective markers is controlled by one or more friendly BLOODED operatives that have a Blooded token, you score 1VP.\n- If you achieve the first condition in any subsequent Turning Points, you score 1VP."
+  },
+  {
+    "archetype": "blooded",
+    "archetypeLabel": "Blooded",
+    "name": "Bloodbath",
+    "occurance": "Reveal this Tac Op at the end of the battle.",
+    "description": "- If more than half of the enemy kill team has been incapacitated at the end of the battle, you score 1VP.\n- If more than three quarters of the enemy kill team has been incapacitated at the end of the battle, you score 1VP."
+  },
   {
     "archetype": "corsair-voidscarred",
     "archetypeLabel": "Corsair Voidscarred",
@@ -208,6 +230,27 @@
     "name": "Opportunists",
     "occurance": "Reveal this Tac Op in the Target Reveal step of the first Turning Point.",
     "description": "Select three enemy operatives. Each time one of those operatives is incapacitated, before it is removed from the killzone, place one of your Loot tokens underneath the operative as close as possible to the centre of its base. The Pick Up action can be performed upon your Loot tokens by friendly operatives. Operatives can carry any number of Loot tokens.\n- At the end of the battle, if friendly operatives are carrying one or more of your Loot tokens, you score 1 VP.\n- At the end of the battle, if friendly operatives are carrying three of your Loot tokens, you score 1VP."
+  },
+  {
+    "archetype": "elucidian-starstrider",
+    "archetypeLabel": "Elucidian Starstrider",
+    "name": "Reputation to Maintain",
+    "occurance": "Reveal this Tac Op the first time a **Fight** or **Shoot** action is declared for a LEADER operative (friendly or enemy).",
+    "description": "When this Tac Op is revealed, both players start a Reputation tally (if both players reveal this Tac Op simultaneously, only start one Reputation tally each). Add one to your Reputation tally each time a friendly LEADER operative inflicts a point of damage on an enemy operative. Note that, in the rare instance an enemy operative did not lose a wound as a result of a point of damage, you would still add one to the Reputation tally.\n- If your Reputation tally is 12 or more, you score 1VP.\n- At the end of the battle, if your Reputation tally is greater than that of your opponent’s, you score 1VP."
+  },
+  {
+    "archetype": "elucidian-starstrider",
+    "archetypeLabel": "Elucidian Starstrider",
+    "name": "Claim for House Vhane",
+    "occurance": "Reveal this Tac Op in the Target Reveal step of the first Turning Point.",
+    "description": "Your opponent selects one objective marker. It cannot be an objective marker that can be permanently removed from the killzone, but it can be an objective marker that can be carried.\n- At the end of any Turning Point, if friendly operatives are controlling that objective marker, you score 1VP.\n- At the end of the battle, if friendly operatives are controlling that objective marker, you score 1VP."
+  },
+  {
+    "archetype": "elucidian-starstrider",
+    "archetypeLabel": "Elucidian Starstrider",
+    "name": "Investigate Motive Force",
+    "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning Point.",
+    "description": "- The second time a friendly LECTRO-MAESTER operative performs the Investigate Motive Force action (below), you score 1VP.\n- The third time a friendly LECTRO-MAESTER operative performs the Investigate Motive Force action, you score 1VP.\n\nThe friendly LECTRO-MAESTER operative can perform the following mission action:  <h5><span>Investigate Motive Force</span><span>1AP</span></h5>An operative can perform this action while it controls an objective marker that is not within your drop zone and has not been investigated for Motive Force during the battle. If it does so, that objective marker has been investigated for Motive Force."
   },
   {
     "archetype": "farstalker-kinband",
@@ -231,6 +274,27 @@
     "description": "Your opponent selects one of their operatives.\n- If that enemy operative is incapacitated, you score 1VP and place your Bounty token underneath the operative as close as possible to the centre of its base.\n- If a friendly operative performs the Confirm Hit action, you score 1VP.\n\nFriendly operatives can perform the following mission action:<h5><span>Confirm Hit</span><span>1AP</span></h5>An operative can perform this action while within <i class='square'></i> of your Bounty token and not within Engagement Range of an enemy operative. Remove your Bounty token."
   },
   {
+    "archetype": "gellerpox",
+    "archetypeLabel": "Gellerpox Infected",
+    "name": "Rampant Nightmare",
+    "occurance": "Reveal this Tac Op in the Target Reveal step of any Turning Point.",
+    "description": "Start a Rampant Nightmare tally for your kill team, aciding 1 to the tally each time an enemy operative loses a wound as a result of one of your NIGHTMARE HULK operatives within that enemy operative’s Engagement Range.\n- If your Rampant Nightmare tally is 30 or more, you score 1VP.\n- If your Rampant Nightmare tally is 50 or more, you score 1VP."
+  },
+  {
+    "archetype": "gellerpox",
+    "archetypeLabel": "Gellerpox Infected",
+    "name": "Pestilent Hosts",
+    "occurance": "Reveal this Tac Op the first time an enemy operative is incapacitated.",
+    "description": "Each time an enemy operative is incapacitated, before it is removed from the killzone, place one of your Pestilent Host tokens underneath the operative as close as possible to the centre of its base. At the end of each Turning Point, add each Pestilent Host token that friendly GELLERPOX INFECTED operatives control to your Pestilent Host token pool.\n- If the total number of Pestilent Host tokens in your pool is equal to or more than a third of the number of enemy operatives selected for deployment, you score 1VP.\n- If the total number of Pestilent Host tokens in your pool is equal to or more than two thirds of the number of enemy operatives selected for deployment, you score 1VP."
+  },
+  {
+    "archetype": "gellerpox",
+    "archetypeLabel": "Gellerpox Infected",
+    "name": "Tech Infection",
+    "occurance": "You must Reveal this Tac Op when a friendly operative performs the Tech Infection action (below).",
+    "description": "- If 3 or more objective markers are tech infected by your kill team, you score 1VP.\n- If 4 or more objective markers are tech infected by your kill team, you score 1VP.\n\nFriendly GELLERPOX INFECTED operatives can perform the following mission action:<h5><span>Tech Infection</span><span>1AP</span></h5>An operative can perform this action while it controls an objective marker that has not been tech infected by your kill team. If it does so, that objective marker has been tech infected by your kill team."
+  },
+  {
     "archetype": "hierotek",
     "archetypeLabel": "Hierotek Circle",
     "name": "Unyielding Ancients",
@@ -250,6 +314,27 @@
     "name": "Worthy of Study",
     "occurance": "Reveal this Tac Op in the Target Reveal step of the first or second Turning Point.",
     "description": " Select two of your opponent’s operatives; your opponent then selects one of them to be worthy of study. If that enemy operative is incapacitated, before it is removed from the killzone, place one of your Study tokens as close as possible to the centre of its base.\n- At the end of any Turning Point, if friendly operatives control your Study token and a friendly Cryptek or Apprentek operative is within <i class='pentagon'></i> of at least one of those friendly operatives, you score 1VP.\n- If you achieve the first condition at the end of any subsequent Turning Points, you score 1VP."
+  },
+  {
+    "archetype": "hunter-clade",
+    "archetypeLabel": "Hunter Clade",
+    "name": "Relentless Pursuit",
+    "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning Point.",
+    "description": "- At the end of any Turning Point, if there are no enemy operatives in the killzone more than <i class='pentagon'></i> from friendly operatives, you score 1VP.\n- If you achieve the first condition in any subsequent Turning Points, you score 1VP."
+  },
+  {
+    "archetype": "hunter-clade",
+    "archetypeLabel": "Hunter Clade",
+    "name": "Calculated Eradication",
+    "occurance": "Reveal this Tac Op when a Doctrina Imperative first becomes active for your kill team.",
+    "description": "- At the end of any Turning Point, if an Imperative is active for your kill team, and the total wounds lost by enemy operatives during that Turning Point is greater than that lost by friendly operatives, you score 1VP.\n- At the end of any Turning Point, if a different Imperative is active for your kill team, and the total wounds lost by enemy operatives during that Turning Point is greater than that lost by friendly operatives, you score 1VP.\n\n**Designer’s Note:** *After revealing this Tac Op, we recommend keeping a tally of wounds lost by each kill team during each Turning Point.*"
+  },
+  {
+    "archetype": "hunter-clade",
+    "archetypeLabel": "Hunter Clade",
+    "name": "Assassination Order",
+    "occurance": "Reveal this Tac Op in the Target Reveal step of the first Turning Point.",
+    "description": "Your opponent selects one of their operatives.\n- If that enemy operative is incapacitated before the fourth Turning Point, you score 1VP.\n- If the first condition is achieved by a friendly HUNTER CLADE operative within <i class='square'></i> of that enemy operative, you score 1VP."
   },
   {
     "archetype": "imperial-navy-breachers",
@@ -336,6 +421,27 @@
     "description": "Select one friendly operative.\n- If two or more enemy operatives are incapacitated in combat by that friendly operative, you score 1VP.\n- If three or more enemy operatives are incapacitated in combat by that friendly operative, you score 1VP."
   },
   {
+    "archetype": "novitiates",
+    "archetypeLabel": "Novitiates",
+    "name": "Purge With Flame",
+    "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning Point.",
+    "description": "- If two or more enemy operatives are incapacitated by attacks made by weapons with the Inferno x critical hit rule, you score 1VP.\n- If an enemy LEADER operative is incapacitated by an attack made by a weapon with the Inferno x critical hit rule, you score 1VP."
+  },
+  {
+    "archetype": "novitiates",
+    "archetypeLabel": "Novitiates",
+    "name": "Reconsecrate Ground",
+    "occurance": "Reveal this Tac Op in the Target Reveal step of the first Turning Point. Select one objective marker that is not within <i class='pentagon'></i> of your drop zone:",
+    "description": "- At the end of any Turning Point, if friendly operatives control that objective marker, you score 1VP.\n- At the end of the battle, if friendly operatives control that objective marker, you score 1VP."
+  },
+  {
+    "archetype": "novitiates",
+    "archetypeLabel": "Novitiates",
+    "name": "Glory to the Martyrs",
+    "occurance": "Reveal this Tac Op when a friendly operative is incapacitated while within <i class='circle'></i> of the centre of an objective marker.",
+    "description": "- If another friendly operative is incapacitated while within <i class='circle'></i> of the centre of that objective marker, you score 1VP.\n- If you achieve the first condition in any subsequent Turning Points, you score 1VP."
+  },
+  {
     "archetype": "pathfinders",
     "archetypeLabel": "Pathfinders",
     "name": "Mark Enemy Movements",
@@ -355,6 +461,27 @@
     "name": "Killing Blow",
     "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning Point.",
     "description": "- At the end of any Turning Point, if the total Wounds characteristic of enemy operatives that were incapacitated during that Turning Point is greater than the total Wounds characteristic of friendly operatives that were incapacitated during that Turning Point, and more than half of your operatives (rounding down) have an Engage order, you score 1VP.\n- If you achieve the first condition in any subsequent Turning Points, you score 1VP."
+  },
+  {
+    "archetype": "phobos",
+    "archetypeLabel": "Phobos Strike Team",
+    "name": "Shock and Awe",
+    "occurance": "You can reveal this Tac Op in the Reveal Tac Ops step of any Turning Point.",
+    "description": "- At the end of any Turning Point, if friendly operatives control one or more objective markers that were controlled by enemy operatives at the start of the Turning Point, you score 1VP.\n- If you achieve the first condition in any subsequent Turning Points, you score 1VP."
+  },
+  {
+    "archetype": "phobos",
+    "archetypeLabel": "Phobos Strike Team",
+    "name": "Saboteurs",
+    "occurance": "Reveal this Tac Op in the Target Reveal step of the first Turning Point.",
+    "description": "Starting with your opponent, alternate placing one of your Saboteur tokens in the killzone until three have been placed. Each time a player places a Saboteur token, it must be touching a terrain feature, more than <i class='square'></i> from the killzone edges, more than <i class='pentagon'></i> from your drop zone and each of your other Saboteur tokens, and it must not be on a Vantage Point.\n- If two or more of your Saboteur tokens are removed, you score 1VP.\n- If three of your Saboteur tokens are removed, you score 1VP.\n\nFriendly operatives can perform the Saboteurs mission action."
+  },
+  {
+    "archetype": "phobos",
+    "archetypeLabel": "Phobos Strike Team",
+    "name": "Guerrilla Tactics",
+    "occurance": "You can reveal this Tac Op in the Reveal Tac Ops step of any Turning Point.",
+    "description": "- At the end of any Turning Point, if more enemy operatives were incapacitated than friendly operatives during that Turning Point, and more than half of your operatives have a Conceal order, you score 1VP.\n- If you achieve the first condition in any subsequent Turning Points, you score 1VP."
   },
   {
     "archetype": "veteran-guardsmen",
