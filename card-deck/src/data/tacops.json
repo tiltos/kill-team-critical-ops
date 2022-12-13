@@ -486,7 +486,7 @@
   {
     "archetype": "phobos",
     "archetypeLabel": "Phobos Strike Team",
-    "name": "Shock and Awe",
+    "name": "Shock and Awe (Phobos)",
     "occurance": "You can reveal this Tac Op in the Reveal Tac Ops step of any Turning Point.",
     "description": "- At the end of any Turning Point, if friendly operatives control one or more objective markers that were controlled by enemy operatives at the start of the Turning Point, you score 1VP.\n- If you achieve the first condition in any subsequent Turning Points, you score 1VP."
   },
