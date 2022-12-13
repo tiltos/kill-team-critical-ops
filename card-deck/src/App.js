@@ -116,7 +116,7 @@ export default function App() {
                     All
                   </option>
                   <option key="Faction" value="faction">
-                    Faction
+                    Faction (Generic)
                   </option>
                 </optgroup>
                 <optgroup label="Archetype">
@@ -131,6 +131,45 @@ export default function App() {
                   </option>
                   <option key="Infiltration" value="infiltration">
                     Infiltration
+                  </option>
+                </optgroup>
+                <optgroup label="Bespoke Teams">
+
+                  <option key="corsair-voidscarred" value="corsair-voidscarred">
+                    Corsair Voidscarred
+                  </option>
+                  <option key="farstalker-kinband" value="farstalker-kinband">
+                    Farstalker Kinband
+                  </option>
+                  <option key="hierotek" value="hierotek">
+                    Hierotek Circle
+                  </option>
+                  <option key="imperial-navy-breachers" value="imperial-navy-breachers">
+                    Imperial Navy Breachers
+                  </option>
+                  <option key="intercessors" value="intercessors">
+                    Intercession Squad
+                  </option>
+                  <option key="kommandos" value="kommandos">
+                    Kommandos
+                  </option>
+                  <option key="legionary" value="legionary">
+                    Legionaries
+                  </option>
+                  <option key="pathfinders" value="pathfinders">
+                    Pathfinders
+                  </option>
+                  <option key="veteran-guardsmen" value="veteran-guardsmen">
+                    Veteran Guardsmen
+                  </option>
+                  <option key="void-dancer-troupe" value="void-dancer-troupe">
+                    Void-dancer Troupe
+                  </option>
+                  <option key="warpcoven" value="warpcoven">
+                    Warpcoven
+                  </option>
+                  <option key="wyrmblade" value="wyrmblade">
+                    Wyrmblade
                   </option>
                 </optgroup>
               </select>
@@ -148,8 +187,8 @@ export default function App() {
                   <div
                     className={
                       savedCards.includes(tacOp.name)
-                        ? `card ${tacOp.archetype} selected`
-                        : `card ${tacOp.archetype} `
+                        ? `tacop card ${tacOp.archetype} selected`
+                        : `tacop card ${tacOp.archetype} `
                     }
                     key={tacOp.archetype + tacOp.name}
                   >
@@ -208,7 +247,7 @@ export default function App() {
               .map((tacOp) => {
                 return (
                   <div
-                    className={"card " + tacOp.archetype}
+                    className={"tacop card " + tacOp.archetype}
                     key={tacOp.archetype + tacOp.name}
                   >
                     <div className="archetype">{tacOp.archetypeLabel}</div>

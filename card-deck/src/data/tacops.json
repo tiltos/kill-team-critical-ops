@@ -53,7 +53,7 @@
     "archetypeLabel": "Seek & Destroy",
     "name": "Eliminate Guards",
     "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning Point.",
-    "description": "Once you do so, at the end of each Target Reveal step, select an objective market on the centre line or within your opponent's territory, then select one enemy operative within <i class='circle'</i> of it to be the guard for the Turning Point.\n- If the enemy operative you selected to be the guard for the Turning Point is incapacitated during the same Turning Point, you score 1VP.\n- If you achieve the first condition in any subsequent Turning Points, you score 1VP."
+    "description": "Once you do so, at the end of each Target Reveal step, select an objective market on the centre line or within your opponent's territory, then select one enemy operative within <i class='circle'></i> of it to be the guard for the Turning Point.\n- If the enemy operative you selected to be the guard for the Turning Point is incapacitated during the same Turning Point, you score 1VP.\n- If you achieve the first condition in any subsequent Turning Points, you score 1VP."
   },
   {
     "archetype": "seek-destroy",
@@ -94,7 +94,7 @@
     "archetype": "recon",
     "archetypeLabel": "Recon",
     "name": "Outflank",
-    "occurance": "You can reveal this Tac Op in the Target Reeveal step of any Turning Point.",
+    "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning Point.",
     "description": "- At the end of any Turning Point, if friendly operatives control both neutral killzone edges, you score 1VP.\n- If you achieve the first condition at the end of any subsequent Turning Points, you score 1VP.\n\nFriendly operatives control a neutral killzone edge if the total APL of friendly operatives within <i class='square'></i> of it is greater than that of enemy operatives. Operatives within <i class='pentagon'></i> of their own drop zone cannot contribute their APL when determining this total."
   },
   {
@@ -187,5 +187,257 @@
     "name": "Faction Tac Op 3",
     "occurance": "Replace with your Faction Tac Op.",
     "description": ""
+  },
+  {
+    "archetype": "corsair-voidscarred",
+    "archetypeLabel": "Corsair Voidscarred",
+    "name": "Flawless Raid",
+    "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning Point after the second.",
+    "description": "- If you had more victory points than your opponent at the start of the Turning Point, you score 1VP.\n- If you achieve the first condition at the start of the subsequent Turning Point, you score 1VP."
+  },
+  {
+    "archetype": "corsair-voidscarred",
+    "archetypeLabel": "Corsair Voidscarred",
+    "name": "Soul Guard",
+    "occurance": "Reveal this Tac Op in the Target Reveal step of the first Turning Point.",
+    "description": "Each time a friendly CORSAIR VOIDSCARRED operative is incapacitated, before it is removed from the killzone, place one of your Spirit Stone tokens underneath the operative as close as possible to the centre of its base.\n\nThe **Pick Up** action can be performed upon your Spirit Stone tokens by friendly CORSAIR VOIDSCARRED operatives. Operatives can carry any number of Spirit Stone tokens and your Spirit Stone tokens can be picked up by friendly CORSAIR VOIDSCARRED operatives while within Engagement Range of an enemy operative.\n- At the end of the battle, if no friendly operatives have been incapacitated, you score 2VPs.\n- Otherwise:\n  - At the end of the battle, if friendly operatives are carrying at least half of your Spirit Stone tokens, you score 1VP.\n  - At the end of the battle, if friendly operatives are carrying all of your Spirit Stone tokens, you score 1VP."
+  },
+  {
+    "archetype": "corsair-voidscarred",
+    "archetypeLabel": "Corsair Voidscarred",
+    "name": "Opportunists",
+    "occurance": "Reveal this Tac Op in the Target Reveal step of the first Turning Point.",
+    "description": "Select three enemy operatives. Each time one of those operatives is incapacitated, before it is removed from the killzone, place one of your Loot tokens underneath the operative as close as possible to the centre of its base. The Pick Up action can be performed upon your Loot tokens by friendly operatives. Operatives can carry any number of Loot tokens.\n- At the end of the battle, if friendly operatives are carrying one or more of your Loot tokens, you score 1 VP.\n- At the end of the battle, if friendly operatives are carrying three of your Loot tokens, you score 1VP."
+  },
+  {
+    "archetype": "farstalker-kinband",
+    "archetypeLabel": "Farstalker Kinband",
+    "name": "Butcher",
+    "occurance": "Reveal this Tac Op the first time an enemy operative is incapacitated.",
+    "description": "Each time an enemy operative is incapacitated, before it is removed from the killzone, place one of your Meat tokens underneath the operative as close as possible to the centre of its base. The **Pick Up** action can be performed upon your Meat tokens by friendly FARSTALKER KINBAND operatives, even if they are carrying another objective marker or token.\n- At the end of the battle, if the total number of your Meat tokens that friendly operatives control is equal to or more than a quarter of the number of enemy operatives selected for deployment, you score 1VP.\n- At the end of the battle, if the total number of your Meat tokens that friendly operatives control is equal to or more than half of the number of enemy operatives selected for deployment, you score 1VP."
+  },
+  {
+    "archetype": "farstalker-kinband",
+    "archetypeLabel": "Farstalker Kinband",
+    "name": "Balance the Books",
+    "occurance": "You can reveal this Tac Op when you score maximum victory points from another Tac Op.",
+    "description": "- If you score maximum victory points from a Tac Op, and no more than half of your operatives have been incapacitated when you do so, you score 1VP.\n- If you score maximum victory points from another Tac Op, and no more than half of your operatives have been incapacitated when you do so, you score 1VP."
+  },
+  {
+    "archetype": "farstalker-kinband",
+    "archetypeLabel": "Farstalker Kinband",
+    "name": "Bounty Hunters",
+    "occurance": "Reveal this Tac Op in the Target Reveal step of the first Turning Point.",
+    "description": "Your opponent selects one of their operatives.\n- If that enemy operative is incapacitated, you score 1VP and place your Bounty token underneath the operative as close as possible to the centre of its base.\n- If a friendly operative performs the Confirm Hit action, you score 1VP.\n\nFriendly operatives can perform the following mission action:<h5><span>Confirm Hit</span><span>1AP</span></h5>An operative can perform this action while within <i class='square'></i> of your Bounty token and not within Engagement Range of an enemy operative. Remove your Bounty token."
+  },
+  {
+    "archetype": "hierotek",
+    "archetypeLabel": "Hierotek Circle",
+    "name": "Unyielding Ancients",
+    "occurance": "Reveal this Tac Op in the Target Reveal step of the first Turing Point.",
+    "description": "- At the end of the battle, if three or more friendly Hierotek Circle operatives (excluding Plasmacyte operatives) are within <i class='pentagon'></i> of the centre of the killzone and/or your opponent's drop zone, you score 1 VP.\n- If you achieved the first condition and one of those Hierotek Circle operatives is a friendly Cryptek or Apprentek operative, you score 1 VP."
+  },
+  {
+    "archetype": "hierotek",
+    "archetypeLabel": "Hierotek Circle",
+    "name": "Unearth Artifice",
+    "occurance": "Reveal this Tac Op in the Target Reveal step of the first Turing Point.",
+    "description": "Place one of your Artifice tokens anywhere in the killzone that is more than <i class='pentagon'></i> from your drop zone and not on a terrain feature (unless it has the Insignificant trait). That token is earthed.\n- At the end of any Turing Point before the fourth, if you control your unearthed Artifice token, you score 1 VP.\n- At the end of the battle, if you control your unearthed Artifice token, you score 1VP.\n Friendly operatives can perform the following mission action:\n<h5><span>Unearth Artifice</span><span>2AP</span></h5>An operative can perform this action while it controls your earther Artifice token. That Artifice token is unearthed. An operative cannot perform this action while within Engagement Range of an enemy operative."
+  },
+  {
+    "archetype": "hierotek",
+    "archetypeLabel": "Hierotek Circle",
+    "name": "Worthy of Study",
+    "occurance": "Reveal this Tac Op in the Target Reveal step of the first or second Turning Point.",
+    "description": " Select two of your opponent’s operatives; your opponent then selects one of them to be worthy of study. If that enemy operative is incapacitated, before it is removed from the killzone, place one of your Study tokens as close as possible to the centre of its base.\n- At the end of any Turning Point, if friendly operatives control your Study token and a friendly Cryptek or Apprentek operative is within <i class='pentagon'></i> of at least one of those friendly operatives, you score 1VP.\n- If you achieve the first condition at the end of any subsequent Turning Points, you score 1VP."
+  },
+  {
+    "archetype": "imperial-navy-breachers",
+    "archetypeLabel": "Imperial Navy Breachers",
+    "name": "Storm Target",
+    "occurance": "Reveal this Tac Op in the Target Reveal step of the first Turning Point.",
+    "description": "Your opponent selects one objective marker. It cannot be an objective marker that can be permanently removed from the killzone, but it can be an objective marker that can be carried.\n- At the end of any Turning Point, if friendly operatives are controlling that objective marker, you score 1VP.\n- At the end of the battle, if friendly operatives are controlling that objective marker, you score 1VP."
+  },
+  {
+    "archetype": "imperial-navy-breachers",
+    "archetypeLabel": "Imperial Navy Breachers",
+    "name": "Into the Breach",
+    "occurance": "You can reveal this Tac Op at the end of the fourth Turning Point.",
+    "description": "- If one or more friendly IMPERIAL NAVY BREACHER operatives (excluding NAVIS GHEISTSKULL and NAVIS C.A.T. UNIT operatives) are within <i class='pentagon'></i> of your opponent’s killzone edge, you score 1VP.\n- If two or more friendly IMPERIAL NAVY BREACHER operatives (excluding NAVIS GHEISTSKULL and NAVIS C.A.T. UNIT operatives) are within <i class='pentagon'></i> of your opponent’s killzone edge, you score 1VP."
+  },
+  {
+    "archetype": "imperial-navy-breachers",
+    "archetypeLabel": "Imperial Navy Breachers",
+    "name": "Counteract",
+    "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning Point.",
+    "description": "- If you use the Breach and Clear ability, and during that Group Activation, one friendly operative incapacitates an enemy operative, and the other friendly operative incapacitates an enemy operative or controls an objective marker at the end of that Group Activation that friendly operatives did not control at the start of it, you score 1VP.\n- If you achieve the first condition in any subsequent Turning Points, you score 1VP."
+  },
+  {
+    "archetype": "intercessors",
+    "archetypeLabel": "Intercession Squad",
+    "name": "Shock and Awe",
+    "occurance": "You can reveal this Tac Op in the Reveal Tac Ops step of any Turning Point.",
+    "description": "- At the end of any Turning Point, if friendly operatives control one or more objective markers that were controlled by enemy operatives at the start of the Turning Point, you score 1VP.\n- If you achieve the first condition in any subsequent Turning Points, you score 1VP."
+  },
+  {
+    "archetype": "intercessors",
+    "archetypeLabel": "Intercession Squad",
+    "name": "Champion of Mankind",
+    "occurance": "You can reveal this Tac Op when a friendly INTERCESSION SQUAD operative incapacitates an enemy operative.",
+    "description": "At the end of the battle:\n- If that friendly operative has incapacitated more enemy operatives than each other friendly INTERCESSION SQUAD operative has during the battle, you score 1VP.\n- If that friendly operative has incapacitated more enemy operatives than each other enemy operative has during the battle, you score 1VP."
+  },
+  {
+    "archetype": "intercessors",
+    "archetypeLabel": "Intercession Squad",
+    "name": "Indomitable Superiority",
+    "occurance": "Reveal this Tac Op at the end of the battle:",
+    "description": "- If enemy operatives do not control any objective markers but an INTERCESSION SQUAD operative does, you score 1VP.\n- If there are less enemy operatives in the killzone than there are friendly INTERCESSION SQUAD operatives in the killzone, you score 1VP.\n\nIf the mission objective requires operatives to be removed from the killzone to score victory points (but not as a result of being incapacitated), e.g. to ‘escape’, you cannot select this Tac Op."
+  },
+  {
+    "archetype": "kommandos",
+    "archetypeLabel": "Kommandos",
+    "name": "Blow It Up!",
+    "occurance": "You can reveal this Tac Op in the Target Reveal step of the first Turning Point.",
+    "description": " Your opponent selects one terrain feature that includes any parts with the Heavy trait to be their bulwark.\n- If a friendly operative performs the Blow It Up! action, you score 2VPs.\n\nFriendly operatives can perform the following mission action:<h5><span>Blow It Up!</span><span>2AP</span></h5>An operative can perform this action while within  of your opponent’s bulwark. An operative cannot perform this action while within  of enemy operatives. Other than a Dash action, an operative cannot perform any other action during an activation in which it would perform this action."
+  },
+  {
+    "archetype": "kommandos",
+    "archetypeLabel": "Kommandos",
+    "name": "Shokk Taktiks",
+    "occurance": "Reveal this Tac Op at the end of the first Turning Point.",
+    "description": "- If any enemy operatives were incapacitated during the first Turning Point, you score 1VP.\n- At the end of the second Turning Point, if friendly operatives control more objective markers than enemy operatives control, you score 1VP."
+  },
+  {
+    "archetype": "kommandos",
+    "archetypeLabel": "Kommandos",
+    "name": "Get Stuck In!",
+    "occurance": "You can reveal this Tac Op in the Reveal Tac Ops step of any Turning Point.",
+    "description": "- At the end of any Turning Point (excluding the fourth), if three or more friendly operatives are within  of your opponent’s drop zone, you score 1VP.\n- If you achieve the first condition at the end of any subsequent Turning Points (excluding the fourth), you score 1VP."
+  },
+  {
+    "archetype": "legionary",
+    "archetypeLabel": "Legionaries",
+    "name": "Sacrilegious Mutilation",
+    "occurance": "Reveal this Tac Op the first time an enemy operative is incapacitated.",
+    "description": "Each time an enemy operative is incapacitated, before it is removed from the killzone, place one of your Enemy Corpse tokens underneath the operative as close as possible to the centre of its base.\n- The second time a friendly operative performs the Defiled For The Dark Gods action, you score 1VP.\n- The fourth time a friendly operative performs the Defiled For The Dark Gods action, you score 1VP.\n Friendly operatives can perform the following mission action:\n<h5><span>Defiled for the Dark Gods</span><span>1AP</span></h5>An operative can perform this action while within <i class='triangle'></i> of one of your Enemy Corpse tokens. An operative cannot perform this action while within <i class='circle'></i> of an enemy operative. Remove that Enemy Corpse token from the killzone."
+  },
+  {
+    "archetype": "legionary",
+    "archetypeLabel": "Legionaries",
+    "name": "Dark Desecration",
+    "occurance": "Reveal this Tac Op in the Target Reveal step of the first Turning Point.",
+    "description": "Select one terrain feature that includes any parts with the Heavy trait.\n- If two or more enemy operatives are incapacitated while within <i class='triangle'></i> of that terrain feature, you score 1 VP.\n- If you achieve the first condition and at the end of the battle the total APL of friendly operatives within <i class='triangle'></i> of that terrain feature is greater than that of enemy operatives, you score 1VP."
+  },
+  {
+    "archetype": "legionary",
+    "archetypeLabel": "Legionaries",
+    "name": "Savage Butcher",
+    "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning Point.",
+    "description": "Select one friendly operative.\n- If two or more enemy operatives are incapacitated in combat by that friendly operative, you score 1VP.\n- If three or more enemy operatives are incapacitated in combat by that friendly operative, you score 1VP."
+  },
+  {
+    "archetype": "pathfinders",
+    "archetypeLabel": "Pathfinders",
+    "name": "Mark Enemy Movements",
+    "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning Point.",
+    "description": "- At the end of any Turning Point, if at least half of the enemy operatives in the killzone (rounding down and a minimum of 3 enemy operatives) have one or more markerlight tokens, you score 1VP.\n- If you achieve the first condition in any subsequent Turning Points, you score 1VP."
+  },
+  {
+    "archetype": "pathfinders",
+    "archetypeLabel": "Pathfinders",
+    "name": "Patient Hunter",
+    "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning Point.",
+    "description": "- At the end of any Turning Point, if you scored more victory points than your opponent for the mission objective during that Turning Point, and more than half of your operatives (rounding down) have a Conceal order, you score 1 VP.\n- If you achieve the first condition in any subsequent Turning Points, you score 1 VP."
+  },
+  {
+    "archetype": "pathfinders",
+    "archetypeLabel": "Pathfinders",
+    "name": "Killing Blow",
+    "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning Point.",
+    "description": "- At the end of any Turning Point, if the total Wounds characteristic of enemy operatives that were incapacitated during that Turning Point is greater than the total Wounds characteristic of friendly operatives that were incapacitated during that Turning Point, and more than half of your operatives (rounding down) have an Engage order, you score 1VP.\n- If you achieve the first condition in any subsequent Turning Points, you score 1VP."
+  },
+  {
+    "archetype": "veteran-guardsmen",
+    "archetypeLabel": "Veteran Guardsmen",
+    "name": "Boots on the Ground",
+    "occurance": "You can reveal this Tac Op at the end of any Turning Point.",
+    "description": "- At the end of that Turning Point, if there are more friendly operatives than enemy operatives within <i class='pentagon'></i> of your drop zone, and there more friendly operatives than enemy operatives within <i class='pentagon'></i> of your opponent’s drop zone, you score 1VP.\n- If you achieve the first condition at the end of any subsequent Turning Points, you score 1VP."
+  },
+  {
+    "archetype": "veteran-guardsmen",
+    "archetypeLabel": "Veteran Guardsmen",
+    "name": "Stand Fast",
+    "occurance": "You can reveal this Tac Op in the Reveal Tac Ops step of any Turning Point.",
+    "description": "- At the end of any Turning Point, if friendly operatives control two or more objective markers, and friendly operatives control more objective markers than enemy operatives do, you score 1 VP.\n- If you achieve the first condition at the end of any subsequent Turning Points, you score an additional 1VP."
+  },
+  {
+    "archetype": "veteran-guardsmen",
+    "archetypeLabel": "Veteran Guardsmen",
+    "name": "Glory in Death",
+    "occurance": "Reveal this Tac Op at the end of the battle.",
+    "description": "If more friendly operatives were incapacitated than enemy operatives, but you scored more victory points from the mission objective, you score 2VPs."
+  },
+  {
+    "archetype": "void-dancer-troupe",
+    "archetypeLabel": "Void-dancer Troupe",
+    "name": "Mythic Play",
+    "occurance": "If you are using the Saedath ability, reveal this Tac Op in the Target Reveal step of the first Turning Point.",
+    "description": "-If your Performance tally is four or more, you score 1VP.\n- If your Performance tally is six or more, you score 1VP."
+  },
+  {
+    "archetype": "void-dancer-troupe",
+    "archetypeLabel": "Void-dancer Troupe",
+    "name": "Hero's Path",
+    "occurance": "You can reveal this Tac Op when a friendly VOID-DANCER TROUPE operative incapacitates an enemy operative.",
+    "description": " At the end of the battle:\n- If that friendly operative has incapacitated more enemy operatives than each other friendly VOID-DANCER TROUPE operative has during the battle, you score 1VP.\n- If that friendly operative is wholly within your opponent’s drop zone, you score 1VP."
+  },
+  {
+    "archetype": "void-dancer-troupe",
+    "archetypeLabel": "Void-dancer Troupe",
+    "name": "Grand Act",
+    "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning Point.",
+    "description": " When this Tac Op is revealed, start a Grand Act tally, adding one to the tally the first time each different Performance is completed by any friendly VOID-DANCER TROUPE operative. Note that it does not have to be the active Allegory’s Performance.\n- If your Grand Act tally is five, you score 1VP.\n- If you achieve the first condition before the fourth Turning Point, you score 1VP."
+  },
+  {
+    "archetype": "warpcoven",
+    "archetypeLabel": "Warpcoven",
+    "name": "Scry Secret",
+    "occurance": "Reveal this Tac Op in the Target Reveal step of the first Turning Point.",
+    "description": "Your opponent selects one of their operatives to be holding a secret.\n- If a friendly operative performs the Scry Secret action, you score 1VP.\n- At the end of the battle, if a friendly operative has performed the Scry Secret action and has not been incapacitated, you score 1VP.\n\nFriendly SORCERER operatives can perform the following mission action:<h5><span>Scry Secret</span><span>1AP</span></h5>Psychic action. An operative can perform this action while within <i class='pentagon'></i> of the enemy operative holding a secret. An operative cannot perform this action while within Engagement Range of an enemy operative. Your kill team can only perform this action once."
+  },
+  {
+    "archetype": "warpcoven",
+    "archetypeLabel": "Warpcoven",
+    "name": "Sorcerous Ritual",
+    "occurance": "Reveal this Tac Op when a friendly operative performs the Sorcerous Ritual action.",
+    "description": "- If a friendly operative performs the Sorcerous Ritual action in two or more Turning Points, you score 1VP.\n- If a friendly operative performs the Sorcerous Ritual action in three or more Turning Points, you score 1VP.\n\nFriendly SORCERER operatives can perform the following mission action:<h5><span>Sorcerous Ritual</span><span>1AP</span></h5>Psychic action. An operative can perform this action while within <i class='circle'></i> of a ritual site. An operative cannot perform this action while within <i class='circle'></i> of an enemy operative. A ritual site is the centre of the killzone or an objective marker that is more than <i class='pentagon'></i> from your drop zone. Once a friendly operative performs this action, friendly operatives can only perform this action again at the same ritual site."
+  },
+  {
+    "archetype": "warpcoven",
+    "archetypeLabel": "Warpcoven",
+    "name": "Grand Plan",
+    "occurance": "Reveal this Tac Op in the Target Reveal step of the first Turning Point.",
+    "description": "Your opponent selects one of their operatives and an objective marker that is more than <i class='pentagon'></i> from their killzone edge (they cannot select an objective marker that can be removed during the battle).\n- If that enemy operative is incapacitated, you score 1VP.\n- If you control that objective marker at the end of any Turning Point, you score 1VP."
+  },
+  {
+    "archetype": "wyrmblade",
+    "archetypeLabel": "Wyrmblade",
+    "name": "Nowhere Unreachable",
+    "occurance": "Reveal this Tac Op in the Target Reveal step of the first Turning Point.",
+    "description": "Your opponent places one of your Location tokens anywhere in the killzone that is more than <i class='pentagon'></i> from their drop zone.\n- At the end of any Turning Point, if a friendly operative is within <i class='triangle'></i> of that location token, you score 1 VP.\n - If you achieve the first condition at the end of any subsequent Turning Points, you score 1VP."
+  },
+  {
+    "archetype": "wyrmblade",
+    "archetypeLabel": "Wyrmblade",
+    "name": "Perfect Ambush",
+    "occurance": "Reveal this Tac Op in the Target Reveal step of any Turning Point before the fourth.",
+    "description": "Keep a tally of wounds lost by each player’s operatives during that Turning Point. At the end of that Turning Point:\n- If the total wounds lost by enemy operatives during that Turning Point is greater than that lost by friendly operatives during that Turning Point, you score 1VP.\n- If the total wounds lost by enemy operatives during that Turning Point as a result of friendly CULT AGENT operatives (shooting attacks they make or combats they fight in) is greater than the total number of wounds lost by friendly operatives during that Turning Point, you score 1VP."
+  },
+  {
+    "archetype": "wyrmblade",
+    "archetypeLabel": "Wyrmblade",
+    "name": "Mark for Assassination",
+    "occurance": "Reveal this Tac Op in the Target Reveal step of any Turning Point.",
+    "description": "- If an enemy operative with a Marked token is incapacitated, you score 1 VP.\n- If another enemy operative with a Marked token is incapacitated, you score 1VP.\n\nFriendly NEOPHYTE operatives can perform the following mission action:<h5><span>Mark for Assassination</span><span>1AP</span></h5>An operative can perform this action while an enemy operative with a Group Activation characteristic of 1 is Visible to and within <i class='square'></i> of it. That enemy operative gains a Marked token. An operative cannot perform this action while within Engagement Range of an enemy operative, or if another friendly operative has performed this action during this Turning Point."
   }
 ]

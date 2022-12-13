@@ -8,7 +8,7 @@
     {
         "letter": "B",
         "name" : "Secure",
-        "rule": "Operatives can perform the following mision action: <h5><span>Secure</span><span>1AP</span></h5>An operative can perform this action while it controls an objective marker. Until the enemy kill yeam secures that objective marker, that objective marker is secured by your kill team.",
+        "rule": "Operatives can perform the following mision action: <h5><span>Secure</span><span>1AP</span></h5>An operative can perform this action while it controls an objective marker. Until the enemy kill team secures that objective marker, that objective marker is secured by your kill team.",
         "objective" : "At the end of each Turning Point, for each objective marker secured by your kill team, you score 1VP."
     },
     {
