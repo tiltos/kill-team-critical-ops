@@ -222,6 +222,9 @@ export default function App() {
                   <option key="intercessors" value="intercessors">
                     Intercession Squad
                   </option>
+                  <option key="kasrkin" value="kasrkin">
+                    Kasrkin
+                  </option>
                   <option key="kommandos" value="kommandos">
                     Kommandos
                   </option>
