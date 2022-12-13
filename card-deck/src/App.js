@@ -10,6 +10,7 @@ import rehypeRaw from "rehype-raw";
 export default function App() {
   const [archetype, setArchetype] = useState(null);
   const [savedCards, setSavedCards] = useState([]);
+  const [hiddenCards, setHiddenCards] = useState([]);
   const [savedMap, setSavedMap] = useState();
   const [savedMission, setSavedMission] = useState();
   const [savedTime, setSavedTime] = useState();
@@ -28,7 +29,6 @@ export default function App() {
     setHours(Math.floor((time / (1000 * 60 * 60)) % 24));
     setMinutes(Math.floor((time / 1000 / 60) % 60));
     setMinutesSinceReset(Math.floor(time / 1000 / 60));
-    console.log(Math.floor(time / 1000 / 60));
   };
 
   function changeTab(choice) {
@@ -77,14 +77,22 @@ export default function App() {
     localStorage.setItem("lastModified", datestamp);
   }
 
+  function toggleCardVisibility(cardName) {
+    if (hiddenCards.includes(cardName)) {
+      setHiddenCards(hiddenCards.filter((tacop) => tacop !== cardName));
+    } else {
+      setHiddenCards((hiddenCards) => [...hiddenCards, cardName]);
+    }
+  }
+
   function Timestamp() {
     if (minutesSinceReset > 0) {
       return (
         <>
-          Last Changed {days > 0 && days + " day"}{days > 1 && ("s")}{" "}
-          {hours > 0 && hours + " hour"}{hours > 1 && ("s")}{" "}
-          {minutes > 0 && minutes + " minute"}{minutes > 1 && ("s")}
-          {" "}ago
+          Last Changed {days > 0 && days + " day"}
+          {days > 1 && "s"} {hours > 0 && hours + " hour"}
+          {hours > 1 && "s"} {minutes > 0 && minutes + " minute"}
+          {minutes > 1 && "s"} ago
         </>
       );
     } else {
@@ -320,32 +328,47 @@ export default function App() {
               .map((tacOp) => {
                 return (
                   <div
-                    className={"tacop card " + tacOp.archetype}
+                    className={`tacop card ${
+                      hiddenCards.includes(tacOp.name) ? `hidden` : ``
+                    } ${tacOp.archetype}`}
                     key={tacOp.archetype + tacOp.name}
                   >
-                    <div className="archetype">{tacOp.archetypeLabel}</div>
-
-                    <div className="middle">
-                      <h2 className="name">{tacOp.name}</h2>
-                      <div className="occurance">
-                        <ReactMarkdown
-                          children={tacOp.occurance}
-                          rehypePlugins={[rehypeRaw]}
-                        />
-                      </div>
-                      <div className="description">
-                        <ReactMarkdown
-                          children={tacOp.description}
-                          rehypePlugins={[rehypeRaw]}
-                        />
-                      </div>
-                    </div>
-                    <div className="footer">
+                    <div className="visibility">
                       <div
-                        className="btn select"
-                        onClick={() => removeCard(tacOp.name)}
-                      >
-                        Remove
+                        className="hide-btn icon"
+                        onClick={() => toggleCardVisibility(tacOp.name)}
+                      ></div>
+                      <div
+                        className="show-btn icon"
+                        onClick={() => toggleCardVisibility(tacOp.name)}
+                      ></div>
+                    </div>
+                    <div className="hidden-label"><span>Hidden</span></div>
+                    <div className="inner">
+                      <div className="archetype">{tacOp.archetypeLabel}</div>
+
+                      <div className="middle">
+                        <h2 className="name">{tacOp.name}</h2>
+                        <div className="occurance">
+                          <ReactMarkdown
+                            children={tacOp.occurance}
+                            rehypePlugins={[rehypeRaw]}
+                          />
+                        </div>
+                        <div className="description">
+                          <ReactMarkdown
+                            children={tacOp.description}
+                            rehypePlugins={[rehypeRaw]}
+                          />
+                        </div>
+                      </div>
+                      <div className="footer">
+                        <div
+                          className="btn select"
+                          onClick={() => removeCard(tacOp.name)}
+                        >
+                          Remove
+                        </div>
                       </div>
                     </div>
                   </div>
