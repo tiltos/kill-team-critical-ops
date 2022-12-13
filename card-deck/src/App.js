@@ -12,9 +12,24 @@ export default function App() {
   const [savedCards, setSavedCards] = useState([]);
   const [savedMap, setSavedMap] = useState();
   const [savedMission, setSavedMission] = useState();
+  const [savedTime, setSavedTime] = useState();
   const [hasGeneratedMission, setHasGeneratedMission] = useState(false);
   const [loaded, setLoaded] = useState(false);
   const [tab, setTab] = useState("");
+
+  const [days, setDays] = useState(0);
+  const [hours, setHours] = useState(0);
+  const [minutes, setMinutes] = useState(0);
+  const [minutesSinceReset, setMinutesSinceReset] = useState(0);
+
+  const getTime = () => {
+    const time = Date.now() - Date.parse(savedTime);
+    setDays(Math.floor(time / (1000 * 60 * 60 * 24)));
+    setHours(Math.floor((time / (1000 * 60 * 60)) % 24));
+    setMinutes(Math.floor((time / 1000 / 60) % 60));
+    setMinutesSinceReset(Math.floor(time / 1000 / 60));
+    console.log(Math.floor(time / 1000 / 60));
+  };
 
   function changeTab(choice) {
     setTab(choice);
@@ -44,19 +59,44 @@ export default function App() {
   function saveCard(cardName) {
     if (savedCards.length < 3) {
       setSavedCards((savedCards) => [...savedCards, cardName]);
+
       localStorage.setItem("savedCards", savedCards);
+
+      let datestamp = new Date();
+      setSavedTime(datestamp);
+      localStorage.setItem("lastModified", datestamp);
     }
   }
 
   function removeCard(cardName) {
     setSavedCards(savedCards.filter((tacop) => tacop !== cardName));
     localStorage.setItem("savedCards", JSON.stringify(savedCards));
+
+    let datestamp = new Date();
+    setSavedTime(datestamp);
+    localStorage.setItem("lastModified", datestamp);
+  }
+
+  function Timestamp() {
+    if (minutesSinceReset > 0) {
+      return (
+        <>
+          Last Changed {days > 0 && days + " day"}{days > 1 && ("s")}{" "}
+          {hours > 0 && hours + " hour"}{hours > 1 && ("s")}{" "}
+          {minutes > 0 && minutes + " minute"}{minutes > 1 && ("s")}
+          {" "}ago
+        </>
+      );
+    } else {
+      return <>Changed just now</>;
+    }
   }
 
   useEffect(() => {
     if (!loaded) {
       setSavedCards(JSON.parse(localStorage.getItem("savedCards")) || "");
       setTab(localStorage.getItem("tab") || "");
+      setSavedTime(localStorage.getItem("lastModified") || null);
       let hasGenerated = localStorage.getItem("hasGenerated") || false;
       if (hasGenerated) {
         setHasGeneratedMission(true);
@@ -69,6 +109,13 @@ export default function App() {
 
     return setLoaded(true);
   }, [savedCards]);
+
+  useEffect(() => {
+    // const interval = setInterval(() => getTime(), 60000);
+    getTime();
+    const interval = setInterval(() => getTime(), 6000);
+    return () => clearInterval(interval);
+  }, [savedTime]);
 
   return (
     <div className="App">
@@ -259,6 +306,9 @@ export default function App() {
           </div>
         </div>
         <div className="saved">
+          <div className="timestamp">
+            <Timestamp />
+          </div>
           <div className="saved-cards card-set">
             {tacOpsData
               .filter(

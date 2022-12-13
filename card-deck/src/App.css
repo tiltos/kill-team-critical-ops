@@ -125,7 +125,7 @@ select {
 }
 
 .saved-cards {
-  margin: 77px auto 30px;
+  margin: 0 auto 30px;
 }
 .map-cards {
   margin-bottom: 30px;
@@ -155,6 +155,7 @@ select {
   transition: 0.3s;
   display: flex;
   flex-direction: column;
+  background-color: white;
 }
 .card.tacop {
   border-color: var(--colour-faction);
@@ -378,6 +379,13 @@ i.pentagon {
 }
 .generate-button:hover {
   background-color: #b03500;
+}
+
+.timestamp {
+  padding: 30px;
+  font-family: 'Roboto Mono';
+  text-align: center;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 500px) {
