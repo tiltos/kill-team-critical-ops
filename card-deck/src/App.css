@@ -227,6 +227,7 @@ select {
   opacity: 0;
 }
 
+
 img {
   max-width: 100%;
 }
@@ -292,6 +293,16 @@ img {
   margin: 10px 0 5px;
   padding: 0 0 5px;
   font-family: "Roboto Mono", monospace;
+}
+
+.card .notice {
+  background: #ffdbdb;
+  text-align: center;
+  margin: 8px 0;
+  padding: 3px 0;
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  color: #a53131;
 }
 
 .card.mission .title {

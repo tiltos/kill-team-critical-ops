@@ -3,7 +3,7 @@
     "archetype": "security",
     "archetypeLabel": "Security",
     "name": "Seize Ground",
-    "occurance": "You must reveal this Tac Op in the Target Reveal step of the first turning point.",
+    "occurance": "<div class='notice not-cc'>Not usable in Close Quarters</div>You must reveal this Tac Op in the Target Reveal step of the first turning point.",
     "description": "Select one terrain feature that is more than <i class='square'></i> from your drop zone and includes any parts with the Heavy trait.\n\n- At the end of the battle, if friendly operatives control that terrain feature, you score 1VP.\n- If you achieve the first condition, there are no enemy operatives within <i class='triangle'></i> of that terrain feature, and the total APL of the friendly operatives that control it is 4 or more, you score 1VP.\n\nFriendly operatives control that terraon feature if the total APL of friendly operatives within <i class='triangle'></i> of it is greater than that of enemy operatives."
   },
   {
@@ -40,6 +40,13 @@
     "name": "Escort Operative",
     "occurance": "You can reveal this Tac Op in the Target Reveal step of the first or second Turning Point.",
     "description": "Select one friendly operative.\n- If that friendly operative is wholly within your opponent's territory, you score 1VP.\n- If that friendly operative is within <i class='pentagon'></i> of your opponent's killzone edge, you score 1VP."
+  },
+  {
+    "archetype": "security",
+    "archetypeLabel": "Security",
+    "name": "Seize Access Point",
+    "occurance": "<div class='notice cc'>Close Quarters Only</div>You must reveal this Tac Op in the Target Reveal step of the first Turning Point.",
+    "description": "Select one access point on the centre line or within your opponent’s territory.\n-At the end of the battle, if the total APL of friendly operatives within <i class='circle'></i> of that access point is greater than that of enemy operatives, you score 1VP. \n- If you achieve the first condition, there are no enemy operatives within <i class='circle'></i> of that access point, and the total APL of friendly operatives within <i class='circle'></i> of it is 4 or more, you score 1VP."
   },
   {
     "archetype": "seek-destroy",
@@ -101,7 +108,7 @@
     "archetype": "recon",
     "archetypeLabel": "Recon",
     "name": "Secure Vantage",
-    "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning Point after the first.",
+    "occurance": "<div class='notice not-cc'>Not usable in Close Quarters</div>You can reveal this Tac Op in the Target Reveal step of any Turning Point after the first.",
     "description": "- At the end of any Turning Point, if you control a Vantage Point that is more than <i class='square'></i> from your drop zone, you score 1VP.\n- If you achieve the first condition with a different vantage point at the end of any subsequent Turning Points, you score 1VP.\n\nFriendly operatives control a Vantage Point if the total APL of friendly operatives on it is greater than that of enemy operatives."
   },
   {
@@ -124,6 +131,13 @@
     "name": "Plant Transponder",
     "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning point after the first.",
     "description": "- If a friendly operative performs the **Plant Transponder** mission action, you score 1VP.\n- If you achieve the first condition in any subsequent Turning Points, you score 1VP.\n\nFriendly operatives can perform the following mission action:<h5><span>Plant Transponder</span> <span>1AP</span></h5>An operative can perform this action while wholly within your opponent's territory and more than <i class='circle'></i> from terrain features (barricades are terrain features. Ignore terrain features that have the Insignificant trait). If it does so, place one of your Transponder tokens underneath the operative as close as possible to the centre of its base. An operative cannot perform this action while within Engagement Range of an enemy operative or <i class='pentagon'></i> of your other Transponder tokens."
+  },
+  {
+    "archetype": "recon",
+    "archetypeLabel": "Recon",
+    "name": "Secure Unexplored Rooms",
+    "occurance": "<div class='notice cc'>Close Quarters Only</div>You can reveal this Tac Op in the Target Reveal step of any Turning Point after the first.",
+    "description": "- At the end of any Turning Point, if the total APL of friendly operatives within an Unexplored Room (see below) is greater than that of enemy operatives, you score 1VP. \n- If you achieve the first condition with a different Unexplored Room (i.e. separated by access points) at the end of any subsequent Turning Points, you score 1VP.\n\nAn Unexplored Room is an area of the killzone that friendly operatives must move through an access point to enter. You cannot use Unexplored Rooms that contain your drop zone or have an access point along the line of your drop zone for this Tac Op."
   },
   {
     "archetype": "infiltration",
