@@ -12,11 +12,14 @@ export default function App() {
   const [savedCards, setSavedCards] = useState([]);
   const [hiddenCards, setHiddenCards] = useState([]);
   const [savedMap, setSavedMap] = useState();
+  const [savedMapType, setSavedMapType] = useState();
   const [savedMission, setSavedMission] = useState();
   const [savedTime, setSavedTime] = useState();
   const [hasGeneratedMission, setHasGeneratedMission] = useState(false);
   const [loaded, setLoaded] = useState(false);
   const [tab, setTab] = useState("");
+  const [mapType, setMapType] = useState("open");
+  const [checked, setChecked] = useState(false);
 
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
@@ -36,12 +39,24 @@ export default function App() {
     localStorage.setItem("tab", choice);
   }
 
+  function toggleMapType() {
+    let chosenMapType = mapType === "open" ? "close_quarters" : "open";
+    setMapType(chosenMapType);
+    setChecked(!checked);
+    localStorage.setItem("mapType", chosenMapType);
+  }
+
   function generateMission(choice) {
-    let ranMap = Math.floor(Math.random() * 9);
+    let ranMap =
+      mapType === "open"
+        ? Math.floor(Math.random() * 9)
+        : Math.floor(Math.random() * 10);
     let ranMission = Math.floor(Math.random() * 3);
     localStorage.setItem("savedMap", ranMap);
     localStorage.setItem("savedMission", ranMission);
+    localStorage.setItem("savedMapType", mapType);
     localStorage.setItem("hasGenerated", true);
+    setSavedMapType(mapType);
     setSavedMap(ranMap);
     setSavedMission(ranMission);
     setHasGeneratedMission(true);
@@ -104,6 +119,13 @@ export default function App() {
     if (!loaded) {
       setSavedCards(JSON.parse(localStorage.getItem("savedCards")) || "");
       setTab(localStorage.getItem("tab") || "");
+      setMapType(localStorage.getItem("mapType") || "open");
+      setSavedMapType(localStorage.getItem("savedMapType") || "open");
+      if (localStorage.getItem("mapType") === "close_quarters") {
+        setChecked(true);
+      } else {
+        setChecked(false);
+      }
       setSavedTime(localStorage.getItem("lastModified") || null);
       let hasGenerated = localStorage.getItem("hasGenerated") || false;
       if (hasGenerated) {
@@ -346,7 +368,9 @@ export default function App() {
                         onClick={() => toggleCardVisibility(tacOp.name)}
                       ></div>
                     </div>
-                    <div className="hidden-label"><span>Hidden</span></div>
+                    <div className="hidden-label">
+                      <span>Hidden</span>
+                    </div>
                     <div className="inner">
                       <div className="archetype">{tacOp.archetypeLabel}</div>
 
@@ -383,29 +407,43 @@ export default function App() {
           className={hasGeneratedMission ? `missions generated` : `missions`}
         >
           <div className="generator">
-            {hasGeneratedMission ? (
-              <>
+            <div className="btn-wrap">
+              {hasGeneratedMission ? (
+                <>
+                  <div
+                    className="btn generate-button"
+                    onClick={() => generateMission()}
+                  >
+                    Generate again
+                  </div>
+                  <div
+                    className="btn generate-button"
+                    onClick={() => resetMission()}
+                  >
+                    Reset
+                  </div>
+                </>
+              ) : (
                 <div
                   className="btn generate-button"
                   onClick={() => generateMission()}
                 >
-                  Generate again
+                  Generate random mission
                 </div>
-                <div
-                  className="btn generate-button"
-                  onClick={() => resetMission()}
-                >
-                  Reset
-                </div>
-              </>
-            ) : (
-              <div
-                className="btn generate-button"
-                onClick={() => generateMission()}
-              >
-                Generate random mission
-              </div>
-            )}
+              )}
+            </div>
+            <div className="map-type-switch">
+              <div className="label open">Open Play</div>
+              <label className="switch">
+                <input
+                  type="checkbox"
+                  onChange={() => toggleMapType()}
+                  checked={checked}
+                />
+                <span className="slider round"></span>
+              </label>
+              <div className="label cq">Close Quarters</div>
+            </div>
           </div>
           <div className="mission-cards card-set">
             {missionsData.map((mission) => {
@@ -440,7 +478,18 @@ export default function App() {
             })}
           </div>
           <div className="map-cards card-set">
-            {mapsData.map((map) => {
+            {mapsData.open.map((map) => {
+              return (
+                <div className={"card map"} key={map.name}>
+                  <div className="archetype">{map.name}</div>
+
+                  <div className="middle">
+                    <img src={map.file} />
+                  </div>
+                </div>
+              );
+            })}
+            {mapsData.close_quarters.map((map) => {
               return (
                 <div className={"card map"} key={map.name}>
                   <div className="archetype">{map.name}</div>
@@ -491,9 +540,11 @@ export default function App() {
                 </div>
               </div>
               <div className={"card map"}>
-                <div className="archetype">{mapsData[savedMap].name}</div>
+                <div className="archetype">
+                  {mapsData[savedMapType][savedMap].name}
+                </div>
                 <div className="middle">
-                  <img src={mapsData[savedMap].file} />
+                  <img src={mapsData[savedMapType][savedMap].file} />
                 </div>
               </div>
               <div className={"card"}>

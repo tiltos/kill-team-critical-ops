@@ -2,9 +2,15 @@
   --colour-dark-grey: #282c34;
   --colour-security: #0b6be1;
   --colour-seek-destroy: #bd0003;
-  --colour-recon: #ff4f02;
+  --colour-recon: #f05c22;
   --colour-infiltration: #5f5f5f;
   --colour-faction: rgb(65, 77, 0);
+  --colour-player1: #6ea4c6;
+  --colour-player1-dark: #0066a5;
+  --colour-player1-light: #c1d8e6;
+  --colour-player2: #d98180;
+  --colour-player2-dark: #d1232a;
+  --colour-player2-light: #eec7c7;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -166,7 +172,10 @@ select {
 }
 .card.map {
   width: 460px;
-  height: 320px;
+  min-height: 320px;
+}
+.card.map img {
+  width: 100%;
 }
 .subhead {
   text-align: center;
@@ -192,7 +201,7 @@ select {
   background: url(img/show.svg) no-repeat center / contain;
 }
 .card .show-btn {
- display: none;
+  display: none;
 }
 
 .card.hidden {
@@ -226,7 +235,6 @@ select {
 .card.hidden .inner {
   opacity: 0;
 }
-
 
 img {
   max-width: 100%;
@@ -428,15 +436,36 @@ i.pentagon {
   transform: rotate(90deg);
 }
 .btn:hover {
-  background-color: #ff4f02;
+  background-color: #f05c22;
 }
 .generator {
   padding: 60px 20px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+}
+.generator .map-type-switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.map-type-switch .label {
+  font-family: "Bebas Neue";
+  text-transform: uppercase;
+  padding: 0 10px;
+  font-size: 26px;
+  color: var(--colour-player1-dark);
+}
+.map-type-switch .label.cq {
+  color: var(--colour-player2-dark);
+}
+.generator .btn-wrap {
+  padding: 0 0 10px;
+  display: flex;
+  justify-content: center;
 }
 .generate-button {
-  background-color: #ff4f02;
+  background-color: #f05c22;
   padding: 15px 40px;
   font-size: 32px;
   margin: 10px;
@@ -447,9 +476,71 @@ i.pentagon {
 
 .timestamp {
   padding: 30px;
-  font-family: 'Roboto Mono';
+  font-family: "Roboto Mono";
   text-align: center;
   text-transform: uppercase;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--colour-player1-dark);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: var(--colour-player2-dark);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--colour-player2-dark);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 500px) {

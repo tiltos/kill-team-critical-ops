@@ -1,38 +1,82 @@
-[
-  {
-    "name": "1. Sector",
-    "file": "/img/map-1.svg"
-  },
-  {
-    "name": "2. Centre",
-    "file": "./img/map-2.svg"
-  },
-  {
-    "name": "3. Flank",
-    "file": "./img/map-3.svg"
-  },
-  {
-    "name": "4. Strait",
-    "file": "./img/map-4.svg"
-  },
-  {
-    "name": "5. Battleground",
-    "file": "./img/map-5.svg"
-  },
-  {
-    "name": "6. Boundary",
-    "file": "./img/map-6.svg"
-  },
-  {
-    "name": "7. Junction",
-    "file": "./img/map-7.svg"
-  },
-  {
-    "name": "8. Approach",
-    "file": "./img/map-8.svg"
-  },
-  {
-    "name": "9. Front Line",
-    "file": "./img/map-9.svg"
-  }
-]
+{
+  "open": [
+    {
+      "name": "1. Sector",
+      "file": "/img/map-1.svg"
+    },
+    {
+      "name": "2. Centre",
+      "file": "./img/map-2.svg"
+    },
+    {
+      "name": "3. Flank",
+      "file": "./img/map-3.svg"
+    },
+    {
+      "name": "4. Strait",
+      "file": "./img/map-4.svg"
+    },
+    {
+      "name": "5. Battleground",
+      "file": "./img/map-5.svg"
+    },
+    {
+      "name": "6. Boundary",
+      "file": "./img/map-6.svg"
+    },
+    {
+      "name": "7. Junction",
+      "file": "./img/map-7.svg"
+    },
+    {
+      "name": "8. Approach",
+      "file": "./img/map-8.svg"
+    },
+    {
+      "name": "9. Front Line",
+      "file": "./img/map-9.svg"
+    }
+  ],
+  "close_quarters": [
+    {
+      "name": "CQ 1. Conduit",
+      "file": "/img/map-cq-1.svg"
+    },
+    {
+      "name": "CQ 2. Channels",
+      "file": "./img/map-cq-2.svg"
+    },
+    {
+      "name": "CQ 3. Hub",
+      "file": "./img/map-cq-3.svg"
+    },
+    {
+      "name": "CQ 4. Bridge",
+      "file": "./img/map-cq-4.svg"
+    },
+    {
+      "name": "CQ 5. Vault",
+      "file": "./img/map-cq-5.svg"
+    },
+    {
+      "name": "CQ 6. Store",
+      "file": "./img/map-cq-6.svg"
+    },
+    {
+      "name": "CQ 7. Hangar",
+      "file": "./img/map-cq-7.svg"
+    },
+    {
+      "name": "CQ 8. Hold",
+      "file": "./img/map-cq-8.svg"
+    },
+    {
+      "name": "CQ 9. Lock",
+      "file": "./img/map-cq-9.svg"
+    },
+    {
+      "name": "CQ 10. Duct",
+      "file": "./img/map-cq-10.svg"
+    }
+  ]
+}
