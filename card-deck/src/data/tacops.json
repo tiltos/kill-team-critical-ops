@@ -4,7 +4,7 @@
     "archetypeLabel": "Security",
     "name": "Seize Ground",
     "occurance": "<div class='notice not-cc'>Not usable in Close Quarters</div>You must reveal this Tac Op in the Target Reveal step of the first turning point.",
-    "description": "Select one terrain feature that is more than <i class='square'></i> from your drop zone and includes any parts with the Heavy trait.\n\n- At the end of the battle, if friendly operatives control that terrain feature, you score 1VP.\n- If you achieve the first condition, there are no enemy operatives within <i class='triangle'></i> of that terrain feature, and the total APL of the friendly operatives that control it is 4 or more, you score 1VP.\n\nFriendly operatives control that terraon feature if the total APL of friendly operatives within <i class='triangle'></i> of it is greater than that of enemy operatives."
+    "description": "Select one terrain feature that is more than <i class='square'></i> from your drop zone and includes any parts with the Heavy trait.\n\n- At the end of the battle, if friendly operatives control that terrain feature, you score 1VP.\n- If you achieve the first condition, there are no enemy operatives within <i class='triangle'></i> of that terrain feature, and the total APL of the friendly operatives that control it is 4 or more, you score 1VP.\n\nFriendly operatives control that terrain feature if the total APL of friendly operatives within <i class='triangle'></i> of it is greater than that of enemy operatives."
   },
   {
     "archetype": "security",
@@ -67,7 +67,7 @@
     "archetypeLabel": "Seek & Destroy",
     "name": "Assassinate Target",
     "occurance": "You must reveal this Tac Op in the Target Reveal step of the first Turning Point.",
-    "description": "Your opponent selects one of their operatives.\n- If that operative is incapacitated, you score 2VPs.\n- At the end of the battle, if that operative has not been incapacitated but has fewer than half of its wounds remaiing, you score 1VP."
+    "description": "Your opponent selects one of their operatives.\n- If that operative is incapacitated, you score 2VPs.\n- At the end of the battle, if that operative has not been incapacitated but has fewer than half of its wounds remaining, you score 1VP."
   },
   {
     "archetype": "seek-destroy",
