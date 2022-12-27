@@ -32,7 +32,7 @@
     "archetypeLabel": "Security",
     "name": "Protect Assets",
     "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning Point.",
-    "description": "- At the end of any Turning Point, if two or more enemy operatives were incapacitated while within <i class='circle'></i> of an objective market during that Turning Point, score 1VP.\n- If you achieve the first condition at the end of any subsequent Turning Points, you score 1VP."
+    "description": "- At the end of any Turning Point, if two or more enemy operatives were incapacitated while within <i class='circle'></i> of an objective marker during that Turning Point, score 1VP.\n- If you achieve the first condition at the end of any subsequent Turning Points, you score 1VP."
   },
   {
     "archetype": "security",
@@ -60,7 +60,7 @@
     "archetypeLabel": "Seek & Destroy",
     "name": "Eliminate Guards",
     "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning Point.",
-    "description": "Once you do so, at the end of each Target Reveal step, select an objective market on the centre line or within your opponent's territory, then select one enemy operative within <i class='circle'></i> of it to be the guard for the Turning Point.\n- If the enemy operative you selected to be the guard for the Turning Point is incapacitated during the same Turning Point, you score 1VP.\n- If you achieve the first condition in any subsequent Turning Points, you score 1VP."
+    "description": "Once you do so, at the end of each Target Reveal step, select an objective marker on the centre line or within your opponent's territory, then select one enemy operative within <i class='circle'></i> of it to be the guard for the Turning Point.\n- If the enemy operative you selected to be the guard for the Turning Point is incapacitated during the same Turning Point, you score 1VP.\n- If you achieve the first condition in any subsequent Turning Points, you score 1VP."
   },
   {
     "archetype": "seek-destroy",
