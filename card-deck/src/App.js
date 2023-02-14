@@ -223,6 +223,12 @@ export default function App() {
                   >
                     Elucidian Starstrider
                   </option>
+                  <option
+                    key="exaction-squad"
+                    value="exaction-squad"
+                  >
+                    Exaction Squad
+                  </option>
                   <option key="farstalker-kinband" value="farstalker-kinband">
                     Farstalker Kinband
                   </option>
@@ -353,9 +359,8 @@ export default function App() {
               .map((tacOp) => {
                 return (
                   <div
-                    className={`tacop card ${
-                      hiddenCards.includes(tacOp.name) ? `hidden` : ``
-                    } ${tacOp.archetype}`}
+                    className={`tacop card ${hiddenCards.includes(tacOp.name) ? `hidden` : ``
+                      } ${tacOp.archetype}`}
                     key={tacOp.archetype + tacOp.name}
                   >
                     <div className="visibility">
