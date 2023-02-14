@@ -202,7 +202,6 @@
     "occurance": "Replace with your Faction Tac Op.",
     "description": ""
   },
-
   {
     "archetype": "blooded",
     "archetypeLabel": "Blooded",
@@ -265,6 +264,27 @@
     "name": "Investigate Motive Force",
     "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning Point.",
     "description": "- The second time a friendly LECTRO-MAESTER operative performs the Investigate Motive Force action (below), you score 1VP.\n- The third time a friendly LECTRO-MAESTER operative performs the Investigate Motive Force action, you score 1VP.\n\nThe friendly LECTRO-MAESTER operative can perform the following mission action:  <h5><span>Investigate Motive Force</span><span>1AP</span></h5>An operative can perform this action while it controls an objective marker that is not within your drop zone and has not been investigated for Motive Force during the battle. If it does so, that objective marker has been investigated for Motive Force."
+  },
+  {
+    "archetype": "exaction-squad",
+    "archetypeLabel": "Exaction Squad",
+    "name": "Seize or Incapacitate",
+    "occurance": "Reveal this Tac Op in the Target Reveal step of the first Turning Point.",
+    "description": "Select one enemy operative to be the criminal. If that operative is incapacitated, before it is removed from the killzone, place one of your criminal tokens underneath the operative as close as possible to the centre of its base. Friendly EXACTION SQUAD operatives (excluding R-VR CYBER-MASTIFF operatives) can perform the <b>Pick Up</b> action on that token while not within Engagement Range of an enemy operative. Subtract <i class='circle'></i> from their Movement characteristic while they are carrying it.\n\n-If that operative is incapacitated, you score 1VP.\n- At the end of the battle, if friendly operatives control your Criminal token, you score 1VP."
+  },
+  {
+    "archetype": "exaction-squad",
+    "archetypeLabel": "Exaction Squad",
+    "name": "Contain Threat",
+    "occurance": "Reveal this Tac Op in the Target Reveal step of any Turning Point.",
+    "description": "- At then end of any Turning Point, if every enemy operative in the killzone within <i class='pentagon'></i> of your opponent's drop zone and/or within <i class='circle'></i> of one of your operatives, you score 1VP.\n- If you achieve the first condition at the end of any subsequent Turning Points, you score 1VP."
+  },
+  {
+    "archetype": "exaction-squad",
+    "archetypeLabel": "Exaction Squad",
+    "name": "Gather Evidence",
+    "occurance": "You can reveal this Tac Op the first time a friendly operative performs the Gather Evidence action (below). At the end of the battle:\n\n- If one or more friendly operatives that have performed the Gather Evidence action have not been incapacitated during the battle, you score 1VP.\n- If two or more friendly operatives that have performed the Gather Evidence action have not been incapacitated during the battle, you score 1VP.\n\nFriendly MALOCATOR, REVELATUM and R-VR CYBER-MASTIFF operatives can perform the following action:",
+    "description": "At the end of the battle if one operative that has done this action survives you get one point, or 2 VP if you have two surviving operatives who have done the action.<h5><span>Gather Evidence</span><span>1AP</span></h5>An operative can perform this action while it controls an objective marker that has not been examined by your kill team. If it does so, until the end of the battle, that objective marker has been examined by your kill team. An operative cannot perform this action while within Engagement Range of an enemy operative."
   },
   {
     "archetype": "farstalker-kinband",
