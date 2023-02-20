@@ -329,6 +329,27 @@
     "description": "- If 3 or more objective markers are tech infected by your kill team, you score 1VP.\n- If 4 or more objective markers are tech infected by your kill team, you score 1VP.\n\nFriendly GELLERPOX INFECTED operatives can perform the following mission action:<h5><span>Tech Infection</span><span>1AP</span></h5>An operative can perform this action while it controls an objective marker that has not been tech infected by your kill team. If it does so, that objective marker has been tech infected by your kill team."
   },
   {
+    "archetype": "hand-of-the-archon",
+    "archetypeLabel": "Hand of the Archon",
+    "name": "Pay the Soul Debt",
+    "occurance": "Reveal this Tac Op the first time a friendly HAND OF THE ARCHON operative gains a Pain token.",
+    "description": "Start a Soubt Debt tally, adding one to the tally each time a friendly HAND OF THE ARCHON operative gains a Pain token (including the first time).\n-If your Soul Debt tally is seven or more, you score 1VP.\n- If your Soul Debt tally is nine or more, you score 1VP."
+  },
+  {
+    "archetype": "hand-of-the-archon",
+    "archetypeLabel": "Hand of the Archon",
+    "name": "Slave Run",
+    "occurance": "Reveal this Tac Op the first time an enemy operative is incapacitated.",
+    "description": "Each time an enemy operative is incapacitated, before it is removed from the killzone, place one of your Slave tokens underneath the operative as close as possible to the centre of its base. Friendly HAND OF THE ARCHON operatives can perform the <b>Pick Up</b> action on that token while not within Engagement Range of an enemy operative. Subtract <i class='circle'></i> from their Movement characteristic while they are carrying it. At the end of the battle:\n- If two or more of your Slave tokens are being carried by friendly HAND OF THE ARCHON operatives, you score 1VP.\n- If four or more of your Slave tokens are being carried by friendly HAND OF THE ARCHON operatives, you score 1VP."
+  },
+  {
+    "archetype": "hand-of-the-archon",
+    "archetypeLabel": "Hand of the Archon",
+    "name": "Contemptuous Slaughter",
+    "occurance": "You can reveal this Tac Op at the end of any Turning Point.",
+    "description": "- At the end of any Turning Point, if one or more enemy operatives were incapacitated during that Turning Point and no friendly HAND OF THE ARCHON operatives were, you score 1VP.\n- If you achieve the first condition at the end of any subsequent Turning Points, you score 1VP.\n\nYou cannot score these conditions in a Turning Point in which no friendly HAND OF THE ARCHON operatives are in the killzone."
+  },
+  {
     "archetype": "hierotek",
     "archetypeLabel": "Hierotek Circle",
     "name": "Unyielding Ancients",

@@ -583,3 +583,63 @@ input:checked + .slider:before {
     height: auto;
   }
 }
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+.footer span,
+.footer a {
+  cursor: pointer;
+  color: #f05c22;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: lowercase;
+  margin: 0 5px;
+}
+.modal-mask {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.modal-mask.visible {
+  display: flex;
+}
+.modal {
+  display: block;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 8px rgb(0 0 0 / 30%);
+  margin: 20px;
+  position: relative;
+  max-width: 400px;
+}
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+.close-btn span {
+  width: 30px;
+  height: 2px;
+  display: block;
+  background: black;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  pointer-events: none;
+}
+.close-btn span:first-child {
+  transform: rotate(-45deg);
+}

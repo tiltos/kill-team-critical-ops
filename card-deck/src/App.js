@@ -20,6 +20,7 @@ export default function App() {
   const [tab, setTab] = useState("");
   const [mapType, setMapType] = useState("open");
   const [checked, setChecked] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
@@ -113,6 +114,13 @@ export default function App() {
     } else {
       return <>Changed just now</>;
     }
+  }
+
+  function toShowModal() {
+    setShowModal(true);
+  }
+  function hideModal() {
+    setShowModal(false);
   }
 
   useEffect(() => {
@@ -223,10 +231,7 @@ export default function App() {
                   >
                     Elucidian Starstrider
                   </option>
-                  <option
-                    key="exaction-squad"
-                    value="exaction-squad"
-                  >
+                  <option key="exaction-squad" value="exaction-squad">
                     Exaction Squad
                   </option>
                   <option key="farstalker-kinband" value="farstalker-kinband">
@@ -234,6 +239,9 @@ export default function App() {
                   </option>
                   <option key="gellerpox" value="gellerpox">
                     Gellerpox Infected
+                  </option>
+                  <option key="hand-of-the-archon" value="hand-of-the-archon">
+                    Hand of the Archon
                   </option>
                   <option key="hierotek" value="hierotek">
                     Hierotek Circle
@@ -359,8 +367,9 @@ export default function App() {
               .map((tacOp) => {
                 return (
                   <div
-                    className={`tacop card ${hiddenCards.includes(tacOp.name) ? `hidden` : ``
-                      } ${tacOp.archetype}`}
+                    className={`tacop card ${
+                      hiddenCards.includes(tacOp.name) ? `hidden` : ``
+                    } ${tacOp.archetype}`}
                     key={tacOp.archetype + tacOp.name}
                   >
                     <div className="visibility">
@@ -560,6 +569,54 @@ export default function App() {
               </div>
             </div>
           )}
+        </div>
+      </div>
+      <div className="footer">
+        <span href="#" className="about-link" onClick={(e) => toShowModal()}>
+          about
+        </span>
+        &nbsp;|&nbsp;
+        <a href="https://www.buymeacoffee.com/dataslate">Buy me a coffee</a>
+      </div>
+      <div className={`modal-mask ${showModal ? " visible" : " hidden"}`}>
+        <div className="modal">
+          <h1>About</h1>
+          <div className="close-btn" onClick={() => hideModal()}>
+            <span></span>
+            <span></span>
+          </div>
+          <div className="modal-contents">
+            <p>
+              I hope you enjoy using this app! If you spot any typos or errors,
+              you can post them on{" "}
+              <a href="https://www.reddit.com/r/killteam/comments/zjszpq/heres_an_app_for_the_new_tac_ops_cards/">
+                this reddit post
+              </a>
+              .
+            </p>
+            <p>
+              If you want to show your appreciation you can{" "}
+              <a href="https://www.buymeacoffee.com/dataslate">
+                buy me a coffee
+              </a>
+              .
+            </p>
+            <h2>Changelog</h2>
+            <ul>
+              <li>
+                <b>20 Februry 2023</b> Added Hand of the Archon TacOps
+              </li>
+              <li>
+                <b>14 Februry 2023</b> Added Exaction Squad TacOps
+              </li>
+              <li>
+                <b>28 December 2022</b> Fixed typos
+              </li>
+              <li>
+                <b>17 December 2022</b> Added Close Quarters Map generator
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
