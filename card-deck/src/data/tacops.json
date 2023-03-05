@@ -458,7 +458,7 @@
     "archetype": "kommandos",
     "archetypeLabel": "Kommandos",
     "name": "Blow It Up!",
-    "occurance": "You can reveal this Tac Op in the Target Reveal step of the first Turning Point.",
+    "occurance": "<div class='notice not-cc'>Not usable in Close Quarters</div>You can reveal this Tac Op in the Target Reveal step of the first Turning Point.",
     "description": " Your opponent selects one terrain feature that includes any parts with the Heavy trait to be their bulwark.\n- If a friendly operative performs the Blow It Up! action, you score 2VPs.\n\nFriendly operatives can perform the following mission action:<h5><span>Blow It Up!</span><span>2AP</span></h5>An operative can perform this action while within  of your opponent’s bulwark. An operative cannot perform this action while within  of enemy operatives. Other than a Dash action, an operative cannot perform any other action during an activation in which it would perform this action."
   },
   {
@@ -473,7 +473,7 @@
     "archetypeLabel": "Kommandos",
     "name": "Get Stuck In!",
     "occurance": "You can reveal this Tac Op in the Reveal Tac Ops step of any Turning Point.",
-    "description": "- At the end of any Turning Point (excluding the fourth), if three or more friendly operatives are within  of your opponent’s drop zone, you score 1VP.\n- If you achieve the first condition at the end of any subsequent Turning Points (excluding the fourth), you score 1VP."
+    "description": "- At the end of any Turning Point (excluding the fourth), if three or more friendly operatives are within <i class='pentagon'></i> of your opponent’s drop zone, you score 1VP.\n- If you achieve the first condition at the end of any subsequent Turning Points (excluding the fourth), you score 1VP."
   },
   {
     "archetype": "legionary",
