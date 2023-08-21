@@ -400,6 +400,9 @@ i.pentagon {
   background: url(img/pentagon.svg) no-repeat center / contain;
   margin: 0;
 }
+b.team {
+  color: var(--colour-recon);
+}
 
 .footer {
   display: flex;
@@ -610,6 +613,7 @@ input:checked + .slider:before {
 }
 .modal-mask.visible {
   display: flex;
+  position: fixed;
 }
 .modal {
   display: block;

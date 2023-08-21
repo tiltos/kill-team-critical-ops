@@ -222,6 +222,9 @@ export default function App() {
                   <option key="blooded" value="blooded">
                     Blooded
                   </option>
+                  <option key="chaos-cult" value="chaos-cult">
+                    Chaos Cult
+                  </option>
                   <option key="corsair-voidscarred" value="corsair-voidscarred">
                     Corsair Voidscarred
                   </option>
@@ -237,11 +240,17 @@ export default function App() {
                   <option key="farstalker-kinband" value="farstalker-kinband">
                     Farstalker Kinband
                   </option>
+                  <option key="fellgor-ravagers" value="fellgor-ravagers">
+                    Fellgor Ravagers
+                  </option>
                   <option key="gellerpox" value="gellerpox">
                     Gellerpox Infected
                   </option>
                   <option key="hand-of-the-archon" value="hand-of-the-archon">
                     Hand of the Archon
+                  </option>
+                  <option key="hearthkyn-salvager" value="hearthkyn-salvager">
+                    Hearthkyn Salvager
                   </option>
                   <option key="hierotek" value="hierotek">
                     Hierotek Circle
@@ -254,6 +263,9 @@ export default function App() {
                     value="imperial-navy-breachers"
                   >
                     Imperial Navy Breachers
+                  </option>
+                  <option key="inquisitorial-agent" value="inquisitorial-agent">
+                    Inquisitorial Agent
                   </option>
                   <option key="intercessors" value="intercessors">
                     Intercession Squad
@@ -603,6 +615,10 @@ export default function App() {
             </p>
             <h2>Changelog</h2>
             <ul>
+              <li>
+                <b>21 August 2023</b> Added Fellgor Ravager, Hearthkyn Salvager,
+                Chaos Cult and Inqusitorial Agent TacOps
+              </li>
               <li>
                 <b>20 Februry 2023</b> Added Hand of the Archon TacOps
               </li>
