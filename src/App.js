@@ -510,7 +510,7 @@ export default function App() {
                   <div className="archetype">{map.name}</div>
 
                   <div className="middle">
-                    <img src={map.file} />
+                    <img src={map.file} alt=""/>
                   </div>
                 </div>
               );
@@ -521,7 +521,7 @@ export default function App() {
                   <div className="archetype">{map.name}</div>
 
                   <div className="middle">
-                    <img src={map.file} />
+                    <img src={map.file} alt="" />
                   </div>
                 </div>
               );
@@ -529,7 +529,7 @@ export default function App() {
             <div className={"card"}>
               <div className="archetype">Map Card Key</div>
               <div className="middle">
-                <img src="./img/legend.svg" />
+                <img src="./img/legend.svg" alt="" />
               </div>
             </div>
           </div>
@@ -570,13 +570,13 @@ export default function App() {
                   {mapsData[savedMapType][savedMap].name}
                 </div>
                 <div className="middle">
-                  <img src={mapsData[savedMapType][savedMap].file} />
+                  <img src={mapsData[savedMapType][savedMap].file}  alt=""/>
                 </div>
               </div>
               <div className={"card"}>
                 <div className="archetype">Map Card Key</div>
                 <div className="middle">
-                  <img src="./img/legend.svg" />
+                  <img src="./img/legend.svg" alt="map legend" />
                 </div>
               </div>
             </div>

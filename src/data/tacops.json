@@ -11,7 +11,7 @@
     "archetypeLabel": "Security",
     "name": "Hold Them Back",
     "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning point after the first.",
-    "description": "- At the end of any Turning Point, if there are no enemy operatives wholly within your territory, you score 1VP.\n- If you acheive the first condition at the end of any subsequent Turning Points, you score 1VP."
+    "description": "- At the end of any Turning Point, if there are no enemy operatives wholly within your territory, you score 1VP.\n- If you achieve the first condition at the end of any subsequent Turning Points, you score 1VP."
   },
   {
     "archetype": "security",
@@ -25,7 +25,7 @@
     "archetypeLabel": "Security",
     "name": "Central Control",
     "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning Point after the first.",
-    "description": "- At the end of any Turning Point, if the total APL of friendly operatives within <i class='square'></i> of the centre of the killzone and not on a Vantage Point is greater than that of enenmy operatives, you score 1VP.\n- If you achieve the first condition at the end of any subsequent Turning Points, you score 1VP."
+    "description": "- At the end of any Turning Point, if the total APL of friendly operatives within <i class='square'></i> of the centre of the killzone and not on a Vantage Point is greater than that of enemy operatives, you score 1VP.\n- If you achieve the first condition at the end of any subsequent Turning Points, you score 1VP."
   },
   {
     "archetype": "security",
@@ -172,13 +172,13 @@
     "archetypeLabel": "Infiltration",
     "name": "Install Device",
     "occurance": "Reveal this Tac Op when a friendly operative performs the Install Device mission action.",
-    "description": "- At the end of any Turning Point, if your Device token has been in the killzone for the whole of that Turning Point, you score 1VP.\n- If you achieve the first condition at the end of any subsequent Turning Points, you score 1VP.\n\nFriendly operatives can perform the following mission action:<h5><span>Install Device</span> <span>1AP</span></h5>An operative can perform this action while it controls an objective marker in your opponent's territory or on the centre line. Place your Device token on that objective marker. Remove it if an enemy operative controls that objective marker. An operative connot perform this action if your Device token is in the killzone."
+    "description": "- At the end of any Turning Point, if your Device token has been in the killzone for the whole of that Turning Point, you score 1VP.\n- If you achieve the first condition at the end of any subsequent Turning Points, you score 1VP.\n\nFriendly operatives can perform the following mission action:<h5><span>Install Device</span> <span>1AP</span></h5>An operative can perform this action while it controls an objective marker in your opponent's territory or on the centre line. Place your Device token on that objective marker. Remove it if an enemy operative controls that objective marker. An operative cannot perform this action if your Device token is in the killzone."
   },
   {
     "archetype": "infiltration",
     "archetypeLabel": "Infiltration",
     "name": "Subversive Control",
-    "occurance": "You can reveal this Tac Op in ther Target Reveal step of the third or fourth Turning Point.",
+    "occurance": "You can reveal this Tac Op in the Target Reveal step of the third or fourth Turning Point.",
     "description": "- At the end of the third Turning Point, if friendly operatives control an objective marker in your opponent's territory and not on the centre line, you score 1VP.\n- At the end of the fourth Turning Point, if friendly operatives control an objective marker in your opponent's territory and not on the centre line, you score 1VP."
   },
   {
@@ -375,7 +375,7 @@
     "archetypeLabel": "Hand of the Archon",
     "name": "Pay the Soul Debt",
     "occurance": "Reveal this Tac Op the first time a friendly HAND OF THE ARCHON operative gains a Pain token.",
-    "description": "Start a Soubt Debt tally, adding one to the tally each time a friendly HAND OF THE ARCHON operative gains a Pain token (including the first time).\n-If your Soul Debt tally is seven or more, you score 1VP.\n- If your Soul Debt tally is nine or more, you score 1VP."
+    "description": "Start a Soul Debt tally, adding one to the tally each time a friendly HAND OF THE ARCHON operative gains a Pain token (including the first time).\n-If your Soul Debt tally is seven or more, you score 1VP.\n- If your Soul Debt tally is nine or more, you score 1VP."
   },
   {
     "archetype": "hand-of-the-archon",
@@ -417,15 +417,15 @@
     "archetype": "hierotek",
     "archetypeLabel": "Hierotek Circle",
     "name": "Unyielding Ancients",
-    "occurance": "Reveal this Tac Op in the Target Reveal step of the first Turing Point.",
+    "occurance": "Reveal this Tac Op in the Target Reveal step of the first Turning Point.",
     "description": "- At the end of the battle, if three or more friendly Hierotek Circle operatives (excluding Plasmacyte operatives) are within <i class='pentagon'></i> of the centre of the killzone and/or your opponent's drop zone, you score 1 VP.\n- If you achieved the first condition and one of those Hierotek Circle operatives is a friendly Cryptek or Apprentek operative, you score 1 VP."
   },
   {
     "archetype": "hierotek",
     "archetypeLabel": "Hierotek Circle",
     "name": "Unearth Artifice",
-    "occurance": "Reveal this Tac Op in the Target Reveal step of the first Turing Point.",
-    "description": "Place one of your Artifice tokens anywhere in the killzone that is more than <i class='pentagon'></i> from your drop zone and not on a terrain feature (unless it has the Insignificant trait). That token is earthed.\n- At the end of any Turing Point before the fourth, if you control your unearthed Artifice token, you score 1 VP.\n- At the end of the battle, if you control your unearthed Artifice token, you score 1VP.\n Friendly operatives can perform the following mission action:\n<h5><span>Unearth Artifice</span><span>2AP</span></h5>An operative can perform this action while it controls your earther Artifice token. That Artifice token is unearthed. An operative cannot perform this action while within Engagement Range of an enemy operative."
+    "occurance": "Reveal this Tac Op in the Target Reveal step of the first Turning Point.",
+    "description": "Place one of your Artifice tokens anywhere in the killzone that is more than <i class='pentagon'></i> from your drop zone and not on a terrain feature (unless it has the Insignificant trait). That token is earthed.\n- At the end of any Turning Point before the fourth, if you control your unearthed Artifice token, you score 1 VP.\n- At the end of the battle, if you control your unearthed Artifice token, you score 1VP.\n Friendly operatives can perform the following mission action:\n<h5><span>Unearth Artifice</span><span>2AP</span></h5>An operative can perform this action while it controls your earther Artifice token. That Artifice token is unearthed. An operative cannot perform this action while within Engagement Range of an enemy operative."
   },
   {
     "archetype": "hierotek",
@@ -495,7 +495,7 @@
     "archetypeLabel": "Inquisitorial Agent",
     "name": "Investigate Lead",
     "occurance": "Reveal this Tac Op in the Target Reveal step of any Turning Point.",
-    "description": "Select one friendly operative to be your investigator.\n- The second time your investigator performs the <b>Investigate Lead</b> action (below), you score 1VP.\n- At the end of the battle, if you acheived the first condition and that friendly operative has not been incapacitated, you score 1VP.\n\nYour investigator can perform the following mission action:\n\n<h5><span>Investigate Lead</span><span>1AP</span></h5>An investigator can perform this action while it controls an objective marker that hasn't been investigated by your kill team. If it does so, that objective marker has been investigated. An investigator operative cannot perform this action while within Engagement Range of an enemy operative."
+    "description": "Select one friendly operative to be your investigator.\n- The second time your investigator performs the <b>Investigate Lead</b> action (below), you score 1VP.\n- At the end of the battle, if you achieved the first condition and that friendly operative has not been incapacitated, you score 1VP.\n\nYour investigator can perform the following mission action:\n\n<h5><span>Investigate Lead</span><span>1AP</span></h5>An investigator can perform this action while it controls an objective marker that hasn't been investigated by your kill team. If it does so, that objective marker has been investigated. An investigator operative cannot perform this action while within Engagement Range of an enemy operative."
   },
   {
     "archetype": "intercessors",
