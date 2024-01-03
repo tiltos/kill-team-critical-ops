@@ -2,7 +2,7 @@
   "open": [
     {
       "name": "1. Sector",
-      "file": "/img/map-1.svg"
+      "file": "./img/map-1.svg"
     },
     {
       "name": "2. Centre",
@@ -40,7 +40,7 @@
   "close_quarters": [
     {
       "name": "CQ 1. Conduit",
-      "file": "/img/map-cq-1.svg"
+      "file": "./img/map-cq-1.svg"
     },
     {
       "name": "CQ 2. Channels",
