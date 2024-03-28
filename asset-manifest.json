@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/kill-team-critical-ops/static/css/main.2894f30d.css",
-    "main.js": "/kill-team-critical-ops/static/js/main.8793035d.js",
+    "main.js": "/kill-team-critical-ops/static/js/main.73d48287.js",
     "static/js/787.569654da.chunk.js": "/kill-team-critical-ops/static/js/787.569654da.chunk.js",
     "static/media/hide.svg": "/kill-team-critical-ops/static/media/hide.82120e2d9ec755c7d5e4.svg",
     "index.html": "/kill-team-critical-ops/index.html",
@@ -9,11 +9,11 @@
     "static/media/pentagon.svg": "/kill-team-critical-ops/static/media/pentagon.4cf5dc5579ba65a5e232.svg",
     "static/media/triangle.svg": "/kill-team-critical-ops/static/media/triangle.1f93ab1cf3f78aade89d.svg",
     "main.2894f30d.css.map": "/kill-team-critical-ops/static/css/main.2894f30d.css.map",
-    "main.8793035d.js.map": "/kill-team-critical-ops/static/js/main.8793035d.js.map",
+    "main.73d48287.js.map": "/kill-team-critical-ops/static/js/main.73d48287.js.map",
     "787.569654da.chunk.js.map": "/kill-team-critical-ops/static/js/787.569654da.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2894f30d.css",
-    "static/js/main.8793035d.js"
+    "static/js/main.73d48287.js"
   ]
 }
