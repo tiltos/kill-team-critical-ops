@@ -288,6 +288,9 @@ export default function App() {
                   <option key="phobos" value="phobos">
                     Phobos Strike Team
                   </option>
+                  <option key="scout-squad" value="scout-squad">
+                    Scout Squad
+                  </option>
                   <option key="veteran-guardsmen" value="veteran-guardsmen">
                     Veteran Guardsmen
                   </option>

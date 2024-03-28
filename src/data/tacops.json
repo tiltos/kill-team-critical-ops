@@ -645,21 +645,21 @@
     "description": "- At the end of any Turning Point, if more enemy operatives were incapacitated than friendly operatives during that Turning Point, and more than half of your operatives have a Conceal order, you score 1VP.\n- If you achieve the first condition in any subsequent Turning Points, you score 1VP."
   },
   {
-    "archetype": "scout",
+    "archetype": "scout-squad",
     "archetypeLabel": "Scout Squad",
     "name": "Sudden Strike",
     "occurance": "Reveal this Tac Op at the end of the first Turning Point.",
     "description": "- If more enemy operatives than friendly operatives were incapacitated during the first Turning Point, you score 1VP.\n- If more enemy operatives than friendly operatives were incapacitated during any subsequent Turning Points, you score 1VP.\n\n    Operatives with a Wounds characteristic of 12 or more are treated as two operatives for this Tac Op."
   },
   {
-    "archetype": "scout",
+    "archetype": "scout-squad",
     "archetypeLabel": "Scout Squad",
     "name": "From All Angles",
     "occurance": "Reveal this Tac Op in the Target Reveal step of any Turning Point.",
     "description": "Once you do so, divide the table into four quarters by drawing imaginary straight lines 1 mm wide that run from the centre of each kiIIzone edge to the centre of its opposite edge.\n- If three friendly SCOUT SQUAD operatives inflict damage on enemy operatives during the same Turning Point, and are wholly within three different table quarters when they do so, you score 1VP.\n- If you achieve the first condition in any subsequent Turning Points, you score 1VP."
   },
   {
-    "archetype": "scout",
+    "archetype": "scout-squad",
     "archetypeLabel": "Scout Squad",
     "name": "Gather Reconnaissance",
     "occurance": "Reveal this Tac Op in the Target Reveal step of any Turning Point.",
