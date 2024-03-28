@@ -219,6 +219,9 @@ export default function App() {
                   </option>
                 </optgroup>
                 <optgroup label="Bespoke Teams">
+                <option key="blades-of-khaine" value="blades-of-khaine">
+                    Blades of Khaine
+                  </option>
                   <option key="blooded" value="blooded">
                     Blooded
                   </option>
@@ -618,6 +621,9 @@ export default function App() {
             </p>
             <h2>Changelog</h2>
             <ul>
+            <li>
+                <b>28 March 2024</b> Added Scout Squad, Blades Of Khaine
+              </li>
               <li>
                 <b>21 August 2023</b> Added Fellgor Ravager, Hearthkyn Salvager,
                 Chaos Cult and Inqusitorial Agent TacOps

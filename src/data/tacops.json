@@ -46,7 +46,7 @@
     "archetypeLabel": "Security",
     "name": "Seize Access Point",
     "occurance": "<div class='notice cc'>Close Quarters Only</div>You must reveal this Tac Op in the Target Reveal step of the first Turning Point.",
-    "description": "Select one access point on the centre line or within your opponent’s territory.\n-At the end of the battle, if the total APL of friendly operatives within <i class='circle'></i> of that access point is greater than that of enemy operatives, you score 1VP. \n- If you achieve the first condition, there are no enemy operatives within <i class='circle'></i> of that access point, and the total APL of friendly operatives within <i class='circle'></i> of it is 4 or more, you score 1VP."
+    "description": "Select one access point on the centre line or within your opponent's territory.\n-At the end of the battle, if the total APL of friendly operatives within <i class='circle'></i> of that access point is greater than that of enemy operatives, you score 1VP. \n- If you achieve the first condition, there are no enemy operatives within <i class='circle'></i> of that access point, and the total APL of friendly operatives within <i class='circle'></i> of it is 4 or more, you score 1VP."
   },
   {
     "archetype": "seek-destroy",
@@ -202,12 +202,34 @@
     "occurance": "Replace with your Faction Tac Op.",
     "description": ""
   },
+  
+  {
+    "archetype": "blades-of-khaine",
+    "archetypeLabel": "Blades of Khaine",
+    "name": "Aspect Warfare",
+    "occurance": "Reveal this Tac Op in the Target Reveal step of any Turning Point.",
+    "description": "- If a friendly DIRE AVENGER, friendly HOWLING BANSHEE and friendly STRIKING SCORPION operative inflict damage on enemy operatives during the same Turning Point, you score 1VP\n - If you achieve the first condition in any subsequent Turning Points, you score 1VP."
+  },
+  {
+    "archetype": "blades-of-khaine",
+    "archetypeLabel": "Blades of Khaine",
+    "name": "Master Techniques",
+    "occurance": "Reveal this Tac Op in the Target Reveal step of any Turning Point.",
+    "description": "- If you use all five Aspect Techniques from an Aspect in any Turning Point (e.g. all five STRIKING SCORPION Aspect Techniques), you score 1VP. Note that you must actually use each Aspect Technique, e.g. if you use Vigilance of the Avenger, you must make a shooting attack against an enemy operative in Cover.\n- If you achieve the first condition in any subsequent Turning Points, you score 1 VP."
+  },
+  {
+    "archetype": "blades-of-khaine",
+    "archetypeLabel": "Blades of Khaine",
+    "name": "Martial Harmony",
+    "occurance": "Reveal this Tac Op in the Target Reveal step of any Turning Point.",
+    "description": "At the end of each Turning Point, check the following three criteria: a friendly DIRE AVENGER operative controls an objective marker; a friendly STRIKING SCORPION operative is within <i class='pentagon'></i> of an enemy operative; a friendly HOWLING BANSHEE operative is within <i class='pentagon'></i> of your opponent's drop zone.\n- At the end of a Turning Point, if at least two of the three criteria above are true, you score 1VP.\n\nIf you achieve the first condition at the end of any subsequent Turning Points, you score 1VP."
+  },
   {
     "archetype": "blooded",
     "archetypeLabel": "Blooded",
     "name": "Worthy Champion",
     "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning Point.",
-    "description": "- If a friendly BLOODED operative that is under the gaze of the gods incapacitates one or more enemy operatives during the Turning Point, and is within <i class='pentagon'></i> of the centre of the killzone or your opponent’s drop zone at the end of the Turning Point, you score 1VP.\n- If you achieve the first condition in any subsequent Turning Points, you score 1VP."
+    "description": "- If a friendly BLOODED operative that is under the gaze of the gods incapacitates one or more enemy operatives during the Turning Point, and is within <i class='pentagon'></i> of the centre of the killzone or your opponent's drop zone at the end of the Turning Point, you score 1VP.\n- If you achieve the first condition in any subsequent Turning Points, you score 1VP."
   },
   {
     "archetype": "blooded",
@@ -270,7 +292,7 @@
     "archetypeLabel": "Elucidian Starstrider",
     "name": "Reputation to Maintain",
     "occurance": "Reveal this Tac Op the first time a **Fight** or **Shoot** action is declared for a LEADER operative (friendly or enemy).",
-    "description": "When this Tac Op is revealed, both players start a Reputation tally (if both players reveal this Tac Op simultaneously, only start one Reputation tally each). Add one to your Reputation tally each time a friendly LEADER operative inflicts a point of damage on an enemy operative. Note that, in the rare instance an enemy operative did not lose a wound as a result of a point of damage, you would still add one to the Reputation tally.\n- If your Reputation tally is 12 or more, you score 1VP.\n- At the end of the battle, if your Reputation tally is greater than that of your opponent’s, you score 1VP."
+    "description": "When this Tac Op is revealed, both players start a Reputation tally (if both players reveal this Tac Op simultaneously, only start one Reputation tally each). Add one to your Reputation tally each time a friendly LEADER operative inflicts a point of damage on an enemy operative. Note that, in the rare instance an enemy operative did not lose a wound as a result of a point of damage, you would still add one to the Reputation tally.\n- If your Reputation tally is 12 or more, you score 1VP.\n- At the end of the battle, if your Reputation tally is greater than that of your opponent's, you score 1VP."
   },
   {
     "archetype": "elucidian-starstrider",
@@ -354,7 +376,7 @@
     "archetypeLabel": "Gellerpox Infected",
     "name": "Rampant Nightmare",
     "occurance": "Reveal this Tac Op in the Target Reveal step of any Turning Point.",
-    "description": "Start a Rampant Nightmare tally for your kill team, aciding 1 to the tally each time an enemy operative loses a wound as a result of one of your NIGHTMARE HULK operatives within that enemy operative’s Engagement Range.\n- If your Rampant Nightmare tally is 30 or more, you score 1VP.\n- If your Rampant Nightmare tally is 50 or more, you score 1VP."
+    "description": "Start a Rampant Nightmare tally for your kill team, aciding 1 to the tally each time an enemy operative loses a wound as a result of one of your NIGHTMARE HULK operatives within that enemy operative's Engagement Range.\n- If your Rampant Nightmare tally is 30 or more, you score 1VP.\n- If your Rampant Nightmare tally is 50 or more, you score 1VP."
   },
   {
     "archetype": "gellerpox",
@@ -432,7 +454,7 @@
     "archetypeLabel": "Hierotek Circle",
     "name": "Worthy of Study",
     "occurance": "Reveal this Tac Op in the Target Reveal step of the first or second Turning Point.",
-    "description": " Select two of your opponent’s operatives; your opponent then selects one of them to be worthy of study. If that enemy operative is incapacitated, before it is removed from the killzone, place one of your Study tokens as close as possible to the centre of its base.\n- At the end of any Turning Point, if friendly operatives control your Study token and a friendly Cryptek or Apprentek operative is within <i class='pentagon'></i> of at least one of those friendly operatives, you score 1VP.\n- If you achieve the first condition at the end of any subsequent Turning Points, you score 1VP."
+    "description": " Select two of your opponent's operatives; your opponent then selects one of them to be worthy of study. If that enemy operative is incapacitated, before it is removed from the killzone, place one of your Study tokens as close as possible to the centre of its base.\n- At the end of any Turning Point, if friendly operatives control your Study token and a friendly Cryptek or Apprentek operative is within <i class='pentagon'></i> of at least one of those friendly operatives, you score 1VP.\n- If you achieve the first condition at the end of any subsequent Turning Points, you score 1VP."
   },
   {
     "archetype": "hunter-clade",
@@ -446,7 +468,7 @@
     "archetypeLabel": "Hunter Clade",
     "name": "Calculated Eradication",
     "occurance": "Reveal this Tac Op when a Doctrina Imperative first becomes active for your kill team.",
-    "description": "- At the end of any Turning Point, if an Imperative is active for your kill team, and the total wounds lost by enemy operatives during that Turning Point is greater than that lost by friendly operatives, you score 1VP.\n- At the end of any Turning Point, if a different Imperative is active for your kill team, and the total wounds lost by enemy operatives during that Turning Point is greater than that lost by friendly operatives, you score 1VP.\n\n**Designer’s Note:** *After revealing this Tac Op, we recommend keeping a tally of wounds lost by each kill team during each Turning Point.*"
+    "description": "- At the end of any Turning Point, if an Imperative is active for your kill team, and the total wounds lost by enemy operatives during that Turning Point is greater than that lost by friendly operatives, you score 1VP.\n- At the end of any Turning Point, if a different Imperative is active for your kill team, and the total wounds lost by enemy operatives during that Turning Point is greater than that lost by friendly operatives, you score 1VP.\n\n**Designer's Note:** *After revealing this Tac Op, we recommend keeping a tally of wounds lost by each kill team during each Turning Point.*"
   },
   {
     "archetype": "hunter-clade",
@@ -467,7 +489,7 @@
     "archetypeLabel": "Imperial Navy Breachers",
     "name": "Into the Breach",
     "occurance": "You can reveal this Tac Op at the end of the fourth Turning Point.",
-    "description": "- If one or more friendly IMPERIAL NAVY BREACHER operatives (excluding NAVIS GHEISTSKULL and NAVIS C.A.T. UNIT operatives) are within <i class='pentagon'></i> of your opponent’s killzone edge, you score 1VP.\n- If two or more friendly IMPERIAL NAVY BREACHER operatives (excluding NAVIS GHEISTSKULL and NAVIS C.A.T. UNIT operatives) are within <i class='pentagon'></i> of your opponent’s killzone edge, you score 1VP."
+    "description": "- If one or more friendly IMPERIAL NAVY BREACHER operatives (excluding NAVIS GHEISTSKULL and NAVIS C.A.T. UNIT operatives) are within <i class='pentagon'></i> of your opponent's killzone edge, you score 1VP.\n- If two or more friendly IMPERIAL NAVY BREACHER operatives (excluding NAVIS GHEISTSKULL and NAVIS C.A.T. UNIT operatives) are within <i class='pentagon'></i> of your opponent's killzone edge, you score 1VP."
   },
   {
     "archetype": "imperial-navy-breachers",
@@ -516,7 +538,7 @@
     "archetypeLabel": "Intercession Squad",
     "name": "Indomitable Superiority",
     "occurance": "Reveal this Tac Op at the end of the battle:",
-    "description": "- If enemy operatives do not control any objective markers but an INTERCESSION SQUAD operative does, you score 1VP.\n- If there are less enemy operatives in the killzone than there are friendly INTERCESSION SQUAD operatives in the killzone, you score 1VP.\n\nIf the mission objective requires operatives to be removed from the killzone to score victory points (but not as a result of being incapacitated), e.g. to ‘escape’, you cannot select this Tac Op."
+    "description": "- If enemy operatives do not control any objective markers but an INTERCESSION SQUAD operative does, you score 1VP.\n- If there are less enemy operatives in the killzone than there are friendly INTERCESSION SQUAD operatives in the killzone, you score 1VP.\n\nIf the mission objective requires operatives to be removed from the killzone to score victory points (but not as a result of being incapacitated), e.g. to ‘escape', you cannot select this Tac Op."
   },
   {
     "archetype": "kasrkin",
@@ -544,7 +566,7 @@
     "archetypeLabel": "Kommandos",
     "name": "Blow It Up!",
     "occurance": "<div class='notice not-cc'>Not usable in Close Quarters</div>You can reveal this Tac Op in the Target Reveal step of the first Turning Point.",
-    "description": " Your opponent selects one terrain feature that includes any parts with the Heavy trait to be their bulwark.\n- If a friendly operative performs the Blow It Up! action, you score 2VPs.\n\nFriendly operatives can perform the following mission action:<h5><span>Blow It Up!</span><span>2AP</span></h5>An operative can perform this action while within  of your opponent’s bulwark. An operative cannot perform this action while within  of enemy operatives. Other than a Dash action, an operative cannot perform any other action during an activation in which it would perform this action."
+    "description": " Your opponent selects one terrain feature that includes any parts with the Heavy trait to be their bulwark.\n- If a friendly operative performs the Blow It Up! action, you score 2VPs.\n\nFriendly operatives can perform the following mission action:<h5><span>Blow It Up!</span><span>2AP</span></h5>An operative can perform this action while within  of your opponent's bulwark. An operative cannot perform this action while within  of enemy operatives. Other than a Dash action, an operative cannot perform any other action during an activation in which it would perform this action."
   },
   {
     "archetype": "kommandos",
@@ -558,7 +580,7 @@
     "archetypeLabel": "Kommandos",
     "name": "Get Stuck In!",
     "occurance": "You can reveal this Tac Op in the Reveal Tac Ops step of any Turning Point.",
-    "description": "- At the end of any Turning Point (excluding the fourth), if three or more friendly operatives are within <i class='pentagon'></i> of your opponent’s drop zone, you score 1VP.\n- If you achieve the first condition at the end of any subsequent Turning Points (excluding the fourth), you score 1VP."
+    "description": "- At the end of any Turning Point (excluding the fourth), if three or more friendly operatives are within <i class='pentagon'></i> of your opponent's drop zone, you score 1VP.\n- If you achieve the first condition at the end of any subsequent Turning Points (excluding the fourth), you score 1VP."
   },
   {
     "archetype": "legionary",
@@ -649,7 +671,7 @@
     "archetypeLabel": "Scout Squad",
     "name": "Sudden Strike",
     "occurance": "Reveal this Tac Op at the end of the first Turning Point.",
-    "description": "- If more enemy operatives than friendly operatives were incapacitated during the first Turning Point, you score 1VP.\n- If more enemy operatives than friendly operatives were incapacitated during any subsequent Turning Points, you score 1VP.\n\n    Operatives with a Wounds characteristic of 12 or more are treated as two operatives for this Tac Op."
+    "description": "- If more enemy operatives than friendly operatives were incapacitated during the first Turning Point, you score 1VP.\n- If more enemy operatives than friendly operatives were incapacitated during any subsequent Turning Points, you score 1VP.\n\nOperatives with a Wounds characteristic of 12 or more are treated as two operatives for this Tac Op."
   },
   {
     "archetype": "scout-squad",
@@ -663,14 +685,14 @@
     "archetypeLabel": "Scout Squad",
     "name": "Gather Reconnaissance",
     "occurance": "Reveal this Tac Op in the Target Reveal step of any Turning Point.",
-    "description": "- If a friendly operative performs the Gather Reconnaissance action, you score 1VP.\n- At the end of the battle, if a friendly operative that performed the Gather Reconnaissance action hasn’t been incapacitated, you score 1 VP. Note that it doesn’t have to be the operative that achieved the first condition.\n\nFriendly SCOUT SQUAD operatives can perform the following mission action during the battle:\n<h5><span>Gather Reconnaissance</span><span>1AP</span></h5>An operative can perform this action while within <i class='pentagon'></i> of your opponent’s drop zone and not within Engagement Range of an enemy operative."
+    "description": "- If a friendly operative performs the Gather Reconnaissance action, you score 1VP.\n- At the end of the battle, if a friendly operative that performed the Gather Reconnaissance action hasn't been incapacitated, you score 1 VP. Note that it doesn't have to be the operative that achieved the first condition.\n\nFriendly SCOUT SQUAD operatives can perform the following mission action during the battle:\n<h5><span>Gather Reconnaissance</span><span>1AP</span></h5>An operative can perform this action while within <i class='pentagon'></i> of your opponent's drop zone and not within Engagement Range of an enemy operative."
   },
   {
     "archetype": "veteran-guardsmen",
     "archetypeLabel": "Veteran Guardsmen",
     "name": "Boots on the Ground",
     "occurance": "You can reveal this Tac Op at the end of any Turning Point.",
-    "description": "- At the end of that Turning Point, if there are more friendly operatives than enemy operatives within <i class='pentagon'></i> of your drop zone, and there more friendly operatives than enemy operatives within <i class='pentagon'></i> of your opponent’s drop zone, you score 1VP.\n- If you achieve the first condition at the end of any subsequent Turning Points, you score 1VP."
+    "description": "- At the end of that Turning Point, if there are more friendly operatives than enemy operatives within <i class='pentagon'></i> of your drop zone, and there more friendly operatives than enemy operatives within <i class='pentagon'></i> of your opponent's drop zone, you score 1VP.\n- If you achieve the first condition at the end of any subsequent Turning Points, you score 1VP."
   },
   {
     "archetype": "veteran-guardsmen",
@@ -698,14 +720,14 @@
     "archetypeLabel": "Void-dancer Troupe",
     "name": "Hero's Path",
     "occurance": "You can reveal this Tac Op when a friendly VOID-DANCER TROUPE operative incapacitates an enemy operative.",
-    "description": " At the end of the battle:\n- If that friendly operative has incapacitated more enemy operatives than each other friendly VOID-DANCER TROUPE operative has during the battle, you score 1VP.\n- If that friendly operative is wholly within your opponent’s drop zone, you score 1VP."
+    "description": " At the end of the battle:\n- If that friendly operative has incapacitated more enemy operatives than each other friendly VOID-DANCER TROUPE operative has during the battle, you score 1VP.\n- If that friendly operative is wholly within your opponent's drop zone, you score 1VP."
   },
   {
     "archetype": "void-dancer-troupe",
     "archetypeLabel": "Void-dancer Troupe",
     "name": "Grand Act",
     "occurance": "You can reveal this Tac Op in the Target Reveal step of any Turning Point.",
-    "description": " When this Tac Op is revealed, start a Grand Act tally, adding one to the tally the first time each different Performance is completed by any friendly VOID-DANCER TROUPE operative. Note that it does not have to be the active Allegory’s Performance.\n- If your Grand Act tally is five, you score 1VP.\n- If you achieve the first condition before the fourth Turning Point, you score 1VP."
+    "description": " When this Tac Op is revealed, start a Grand Act tally, adding one to the tally the first time each different Performance is completed by any friendly VOID-DANCER TROUPE operative. Note that it does not have to be the active Allegory's Performance.\n- If your Grand Act tally is five, you score 1VP.\n- If you achieve the first condition before the fourth Turning Point, you score 1VP."
   },
   {
     "archetype": "warpcoven",
@@ -740,7 +762,7 @@
     "archetypeLabel": "Wyrmblade",
     "name": "Perfect Ambush",
     "occurance": "Reveal this Tac Op in the Target Reveal step of any Turning Point before the fourth.",
-    "description": "Keep a tally of wounds lost by each player’s operatives during that Turning Point. At the end of that Turning Point:\n- If the total wounds lost by enemy operatives during that Turning Point is greater than that lost by friendly operatives during that Turning Point, you score 1VP.\n- If the total wounds lost by enemy operatives during that Turning Point as a result of friendly CULT AGENT operatives (shooting attacks they make or combats they fight in) is greater than the total number of wounds lost by friendly operatives during that Turning Point, you score 1VP."
+    "description": "Keep a tally of wounds lost by each player's operatives during that Turning Point. At the end of that Turning Point:\n- If the total wounds lost by enemy operatives during that Turning Point is greater than that lost by friendly operatives during that Turning Point, you score 1VP.\n- If the total wounds lost by enemy operatives during that Turning Point as a result of friendly CULT AGENT operatives (shooting attacks they make or combats they fight in) is greater than the total number of wounds lost by friendly operatives during that Turning Point, you score 1VP."
   },
   {
     "archetype": "wyrmblade",
