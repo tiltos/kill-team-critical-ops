@@ -1,5 +1,7 @@
 # Kill Team Critical Operations Deck
 
+This app is now hosted on github pages: https://tiltos.github.io/kill-team-critical-ops/
+
 I didn't want to buy the new card deck - I have like 6 sets of the existing ones - so I made a small app for them instead. It's mobile friendly, and has `localStorage` so will store your saved cards.
 
 C&C welcome, hope it comes in handy! If there's enough demand I'll whip up the mission cards.
