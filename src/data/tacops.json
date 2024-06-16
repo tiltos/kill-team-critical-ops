@@ -770,5 +770,26 @@
     "name": "Mark for Assassination",
     "occurance": "Reveal this Tac Op in the Target Reveal step of any Turning Point.",
     "description": "- If an enemy operative with a Marked token is incapacitated, you score 1 VP.\n- If another enemy operative with a Marked token is incapacitated, you score 1VP.\n\nFriendly NEOPHYTE operatives can perform the following mission action:<h5><span>Mark for Assassination</span><span>1AP</span></h5>An operative can perform this action while an enemy operative with a Group Activation characteristic of 1 is Visible to and within <i class='square'></i> of it. That enemy operative gains a Marked token. An operative cannot perform this action while within Engagement Range of an enemy operative, or if another friendly operative has performed this action during this Turning Point."
+  },
+  {
+    "archetype": "mandrakes",
+    "archetypeLabel": "Mandrakes",
+    "name": "Shadow's Reach",
+    "occurance": "Reveal this Tac Op in the Target Reveal step of any Turning Point.",
+    "description": "- At the end of any Turning Point, if friendly <b>MANDRAKE</b> operatives control a terrain feature wholly within your opponent's territory that has any parts with the Heavy trait, you score 1VP.\n- If you achieve the first condition with a different terrain feature at the end of any subsequent Turning Points, you score 1VP.\n\nFriendly <b>MANDRAKE</b> operatives control such a terrain feature if the total APL of friendly <b>MANDRAKE</b> operatives within its shadow is greater than that of enemy operatives."
+  },
+  {
+    "archetype": "mandrakes",
+    "archetypeLabel": "Mandrakes",
+    "name": "Haunting Manifestation",
+    "occurance": "Reveal this Tac Op in the Target Reveal step of any Turning Point. When you do so, select one enemy operative.",
+    "description": "- At the end of any Turning Point (excluding the fourth), if a friendly <b>MANDRAKE</b> operative is Visible to and within <i class='square'></i> of that enemy operative, you score 1VP.\n- If you achieve the first condition, and at the end of the battle that enemy operative has not been incapacitated, you score 1VP."
+  },
+  {
+    "archetype": "mandrakes",
+    "archetypeLabel": "Mandrakes",
+    "name": "Death From Darkness",
+    "occurance": "Reveal this Tac Op in the Target Reveal step of any Turning Point.",
+    "description": "- If a friendly <b>MANDRAKE</b> operative is activated within shadow, performs the <b>Charge</b> action, incapacitates an enemy operative in combat and ends that activation within shadow, you score 1VP.\n- If you achieve the first condition in any subsequent Turning Points, you score 1VP."
   }
 ]
