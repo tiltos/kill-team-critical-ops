@@ -282,6 +282,9 @@ export default function App() {
                   <option key="legionary" value="legionary">
                     Legionaries
                   </option>
+                  <option key="mandrakes" value="mandrakes">
+                    Mandrakes
+                  </option>
                   <option key="novitiates" value="novitiates">
                     Novitiates
                   </option>
